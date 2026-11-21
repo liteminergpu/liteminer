@@ -12,8 +12,10 @@
 <a href="#gpu-và-hashrate"><img alt="GPUs" src="https://img.shields.io/badge/GPU-NVIDIA%20%7C%20AMD-76b900?logo=nvidia&logoColor=white"></a>
 <a href="#coin-thuật-toán-và-phí-nhà-phát-triển"><img alt="Coins" src="https://img.shields.io/badge/coins-PRL%20%7C%20QTC-e8a33d"></a>
 <a href="#coin-thuật-toán-và-phí-nhà-phát-triển"><img alt="Dev fee" src="https://img.shields.io/badge/dev%20fee-2%25-555555"></a>
-<a href="https://www.virustotal.com/gui/file/f495dddb5ba706bedd41426fa79ff91ff9dc1de93fbb1239bd05bb43dc2c94ce"><img alt="VirusTotal" src="https://img.shields.io/badge/VirusTotal-report-394eff?logo=virustotal&logoColor=white"></a>
+<a href="https://www.virustotal.com/gui/file/5cecc0f5b6d505474d1881a279007852ee61bf670a7b5deefe0d298844d74180"><img alt="VirusTotal" src="https://img.shields.io/badge/VirusTotal-report-394eff?logo=virustotal&logoColor=white"></a>
 <a href="#hỗ-trợ"><img alt="Support" src="https://img.shields.io/badge/support-lmsupp%40proton.me-6d4aff?logo=protonmail&logoColor=white"></a>
+<a href="https://t.me/liteminergpu"><img alt="Telegram" src="https://img.shields.io/badge/Telegram-%40liteminergpu-26A5E4?logo=telegram&logoColor=white"></a>
+<a href="https://discord.com/users/1572214196995624980"><img alt="Discord" src="https://img.shields.io/badge/Discord-liteminer.support-5865F2?logo=discord&logoColor=white"></a>
 <a href="#giấy-phép"><img alt="License" src="https://img.shields.io/badge/license-freeware%2C%20closed%20source-lightgrey"></a>
 </p>
 
@@ -68,7 +70,7 @@ Và vài điều bạn sẽ không bao giờ phải bận tâm:
 
 ### Windows
 
-1. [Tải bản phát hành mới nhất](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-windows-x64-portable.zip) (`LiteMiner-0.4.2-windows-x64-portable.zip`).
+1. [Tải bản phát hành mới nhất](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-windows-x64-portable.zip) (`LiteMiner-0.5.0-windows-x64-portable.zip`).
 2. Giải nén vào thư mục bất kỳ.
 3. Mở **`LiteMiner-GUI.exe`**. Trợ lý thiết lập sẽ dẫn bạn qua các bước còn lại.
 
@@ -82,10 +84,10 @@ LiteMiner.exe -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLE
 Hoặc tải về, giải nén và khởi động chỉ bằng một lệnh PowerShell:
 
 ```powershell
-irm https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-windows-x64-portable.zip -OutFile LiteMiner.zip; Expand-Archive LiteMiner.zip .; .\LiteMiner-0.4.2-windows-x64\LiteMiner-GUI.exe
+irm https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-windows-x64-portable.zip -OutFile LiteMiner.zip; Expand-Archive LiteMiner.zip .; .\LiteMiner-0.5.0-windows-x64\LiteMiner-GUI.exe
 ```
 
-Yêu cầu: Windows 10 hoặc 11 (x64) và driver đồ họa mới nhất.
+Yêu cầu: Windows 10 hoặc 11 (x64) và driver đồ họa mới nhất. Ứng dụng giao diện cần Windows 10 phiên bản 1809 trở lên; trình đào dòng lệnh (`LiteMiner.exe` và các tệp `.bat`) chạy trên mọi Windows 10 x64.
 
 > [!TIP]
 > Chưa có ví? Một [tài khoản Kryptex](https://www.kryptex.com/register?ref=b629c482) miễn phí dùng được cho cả hai coin: nhập tên người dùng (`krxXXXXXX`) vào ô ví, và Kryptex sẽ trả bằng BTC hoặc USDT tùy bạn chọn.
@@ -97,13 +99,13 @@ Cách nhanh nhất: một lệnh duy nhất tải về, giải nén và bắt đ
 Pearl:
 
 ```bash
-curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.4.2-linux-x64 && ./LiteMiner -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
+curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.5.0-linux-x64 && ./LiteMiner -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
 ```
 
 Quantus:
 
 ```bash
-curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.4.2-linux-x64 && ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w rig1
+curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.5.0-linux-x64 && ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w rig1
 ```
 
 Cùng thư mục đó có ứng dụng giao diện: `./LiteMiner-GUI`.
@@ -112,13 +114,13 @@ Gói cho các bản phân phối khác nhau:
 
 ```bash
 # Debian, Ubuntu, Linux Mint, Pop!_OS
-wget https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer_0.4.2_amd64.deb https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-gui_0.4.2_amd64.deb
-sudo apt install ./liteminer_0.4.2_amd64.deb ./liteminer-gui_0.4.2_amd64.deb
+wget https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer_0.5.0_amd64.deb https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui_0.5.0_amd64.deb
+sudo apt install ./liteminer_0.5.0_amd64.deb ./liteminer-gui_0.5.0_amd64.deb
 ```
 
 ```bash
 # Fedora, RHEL, AlmaLinux, Rocky Linux (openSUSE: sudo zypper install ...)
-sudo dnf install https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-0.4.2-1.x86_64.rpm https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-gui-0.4.2-1.x86_64.rpm
+sudo dnf install https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0-1.x86_64.rpm https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui-0.5.0-1.x86_64.rpm
 ```
 
 Gói `liteminer` chứa trình đào dòng lệnh cho máy chủ và máy đào; `liteminer-gui` bổ sung ứng dụng giao diện. Để chạy trình đào như một dịch vụ, dùng `sudo systemctl enable --now liteminer@YOUR_USER`; dịch vụ đọc `~/.local/share/liteminer/miner.json`. Chi tiết: `man liteminer`.
@@ -132,7 +134,7 @@ Tạo Flight Sheet: **Coin**: coin của bạn, **Wallet**: ví của bạn, **P
 | Trường | Giá trị |
 |---|---|
 | Miner name | `liteminer` (tự điền từ URL) |
-| Installation URL | `https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-0.4.2.tar.gz` |
+| Installation URL | `https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0.tar.gz` |
 | Hash algorithm | `pearl` hoặc `quantus` |
 | Wallet and worker template | `%WAL%.%WORKER_NAME%` |
 | Pool URL | `stratum+ssl://prl.kryptex.network:8048` (Pearl) hoặc `stratum+ssl://qtc.kryptex.network:8049` (Quantus) |
@@ -147,36 +149,36 @@ Docker cần máy chủ Linux (hoặc Windows có Docker Desktop và WSL 2) đã
 
 ```bash
 docker run -d --name liteminer --gpus all --restart unless-stopped -v liteminer-data:/data \
-  liteminer/liteminer:0.4.2 -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
+  liteminer/liteminer:0.5.0 -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
 docker logs -f liteminer
 ```
 
 Thay cho tùy chọn, container cũng nhận các biến môi trường `LITEMINER_ALGORITHM`, `LITEMINER_POOL`, `LITEMINER_WALLET`, `LITEMINER_WORKER`, `LITEMINER_PASSWORD` và `LITEMINER_DEVICES`. Hãy giữ volume `/data`: nó lưu nhật ký và kết quả tinh chỉnh của từng GPU, nên khi khởi động lại không phải tinh chỉnh lại. `docker stop -t 60 liteminer` cho mỗi GPU hoàn tất phần việc hiện tại.
 
-Trên dịch vụ GPU đám mây, chọn image `liteminer/liteminer:0.4.2` và đặt `LITEMINER_ALGORITHM`, `LITEMINER_POOL`, `LITEMINER_WALLET` trong biến môi trường của template. Hoặc dùng bất kỳ image Ubuntu nào có CUDA (ví dụ `nvidia/cuda:12.4.1-base-ubuntu22.04`) với script khởi động (on-start script) sau:
+Trên dịch vụ GPU đám mây, chọn image `liteminer/liteminer:0.5.0` và đặt `LITEMINER_ALGORITHM`, `LITEMINER_POOL`, `LITEMINER_WALLET` trong biến môi trường của template. Hoặc dùng bất kỳ image Ubuntu nào có CUDA (ví dụ `nvidia/cuda:12.4.1-base-ubuntu22.04`) với script khởi động (on-start script) sau:
 
 ```bash
 apt-get update && apt-get install -y --no-install-recommends ca-certificates curl
-curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-linux-x64-portable.tar.gz | tar -xz -C /opt
-cd /opt/LiteMiner-0.4.2-linux-x64 && nohup ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w cloud1 > /var/log/liteminer.log 2>&1 &
+curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz | tar -xz -C /opt
+cd /opt/LiteMiner-0.5.0-linux-x64 && nohup ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w cloud1 > /var/log/liteminer.log 2>&1 &
 ```
 
 Tất cả GPU của instance sẽ cùng đào. Theo dõi nhật ký bằng `tail -f /var/log/liteminer.log`. Máy chủ thuê thường được thiết kế để chạy nóng: nếu nhà cung cấp kiểm soát nhiệt độ, `--thermal off` để việc đó cho họ.
 
 ## Tải về và tổng kiểm tra
 
-Mọi tệp của bản 0.4.2 đều có trên [trang phát hành](https://github.com/liteminergpu/liteminer/releases/latest). Để đối chiếu tệp tải về với `SHA256SUMS.txt`, chạy `certutil -hashfile TỆP SHA256` trên Windows hoặc `sha256sum -c --ignore-missing SHA256SUMS.txt` trên Linux.
+Mọi tệp của bản 0.5.0 đều có trên [trang phát hành](https://github.com/liteminergpu/liteminer/releases/latest). Để đối chiếu tệp tải về với `SHA256SUMS.txt`, chạy `certutil -hashfile TỆP SHA256` trên Windows hoặc `sha256sum -c --ignore-missing SHA256SUMS.txt` trên Linux.
 
 | Nền tảng | Tệp | Dung lượng | SHA-256 | Quét |
 |---|---|---:|---|---|
-| Windows x64 | [`LiteMiner-0.4.2-windows-x64-portable.zip`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-windows-x64-portable.zip) | 80.8 MB | <sub>`f495dddb5ba706bedd41426fa79ff91ff9dc1de93fbb1239bd05bb43dc2c94ce`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/f495dddb5ba706bedd41426fa79ff91ff9dc1de93fbb1239bd05bb43dc2c94ce) |
-| Linux x64 | [`LiteMiner-0.4.2-linux-x64-portable.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-linux-x64-portable.tar.gz) | 103.3 MB | <sub>`8968150c50ac470bbcaf40f414dc4c83201883a67b60968c43ec196a7d030007`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/8968150c50ac470bbcaf40f414dc4c83201883a67b60968c43ec196a7d030007) |
-| HiveOS | [`liteminer-0.4.2.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-0.4.2.tar.gz) | 29.0 MB | <sub>`7ce474cb580e1f3114ef2453f66a36681d996a78c9d7148125a35bda238724bf`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/7ce474cb580e1f3114ef2453f66a36681d996a78c9d7148125a35bda238724bf) |
-| Docker (build context) | [`LiteMiner-0.4.2-docker.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-docker.tar.gz) | 29.0 MB | <sub>`c6c42b3e6d00e0faedca497592b6fe8955a4fd1ea38263829518d29526d6fc34`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/c6c42b3e6d00e0faedca497592b6fe8955a4fd1ea38263829518d29526d6fc34) |
-| Debian / Ubuntu | [`liteminer_0.4.2_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer_0.4.2_amd64.deb) | 29.1 MB | <sub>`a9213322d7d36732e845aba9f26c382260cfef3986f162bf87c8dc4fce474f7f`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/a9213322d7d36732e845aba9f26c382260cfef3986f162bf87c8dc4fce474f7f) |
-| Debian / Ubuntu | [`liteminer-gui_0.4.2_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-gui_0.4.2_amd64.deb) | 45.3 MB | <sub>`bb887052ca8807b846026ba0d4f5ce042b2f202ecb4bbbf71d47206388fe0122`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/bb887052ca8807b846026ba0d4f5ce042b2f202ecb4bbbf71d47206388fe0122) |
-| Fedora / RHEL / openSUSE | [`liteminer-0.4.2-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-0.4.2-1.x86_64.rpm) | 24.4 MB | <sub>`7e0f6c9d748eae775a96338d46958384696aefd3726fd28706b56bc59ad531dc`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/7e0f6c9d748eae775a96338d46958384696aefd3726fd28706b56bc59ad531dc) |
-| Fedora / RHEL / openSUSE | [`liteminer-gui-0.4.2-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-gui-0.4.2-1.x86_64.rpm) | 31.2 MB | <sub>`fbf9a0fc2d4627a3dc490f1f365f36359ca11e04ed78ab9246d2d201543d34eb`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/fbf9a0fc2d4627a3dc490f1f365f36359ca11e04ed78ab9246d2d201543d34eb) |
+| Windows x64 | [`LiteMiner-0.5.0-windows-x64-portable.zip`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-windows-x64-portable.zip) | 86.4 MB | <sub>`5cecc0f5b6d505474d1881a279007852ee61bf670a7b5deefe0d298844d74180`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/5cecc0f5b6d505474d1881a279007852ee61bf670a7b5deefe0d298844d74180) |
+| Linux x64 | [`LiteMiner-0.5.0-linux-x64-portable.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz) | 109.3 MB | <sub>`7012cf25d79081b5ae33163734b801453495fa2859ba716dad045621b906f297`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/7012cf25d79081b5ae33163734b801453495fa2859ba716dad045621b906f297) |
+| HiveOS | [`liteminer-0.5.0.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0.tar.gz) | 31.7 MB | <sub>`6c481944cac595bc3ae9ea9c75fb4d5fc53356ba899c3cc0f29925e71f2a38e1`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/6c481944cac595bc3ae9ea9c75fb4d5fc53356ba899c3cc0f29925e71f2a38e1) |
+| Docker (build context) | [`LiteMiner-0.5.0-docker.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-docker.tar.gz) | 31.7 MB | <sub>`f9bb75ecc0e61766fed48b95fc1747d9f7f7b8b8da2665b8bc71a87f0b6a786f`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/f9bb75ecc0e61766fed48b95fc1747d9f7f7b8b8da2665b8bc71a87f0b6a786f) |
+| Debian / Ubuntu | [`liteminer_0.5.0_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer_0.5.0_amd64.deb) | 31.9 MB | <sub>`cbe27b0df79958b9157d1ce2f96ecd2232d8f26b87a65f896a06540d8c7ba4e2`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/cbe27b0df79958b9157d1ce2f96ecd2232d8f26b87a65f896a06540d8c7ba4e2) |
+| Debian / Ubuntu | [`liteminer-gui_0.5.0_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui_0.5.0_amd64.deb) | 45.8 MB | <sub>`a594191023ad6e0d82421c54c0531d40eb8ead8ff145b21e1c5464c71448f7f6`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/a594191023ad6e0d82421c54c0531d40eb8ead8ff145b21e1c5464c71448f7f6) |
+| Fedora / RHEL / openSUSE | [`liteminer-0.5.0-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0-1.x86_64.rpm) | 26.4 MB | <sub>`02303eedc01ce0827e2be8af725a99411a43d713b9078f95dce4ccd81cb48b87`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/02303eedc01ce0827e2be8af725a99411a43d713b9078f95dce4ccd81cb48b87) |
+| Fedora / RHEL / openSUSE | [`liteminer-gui-0.5.0-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui-0.5.0-1.x86_64.rpm) | 31.5 MB | <sub>`c91f566035fc4651c1592e78742e0dc1b41dfeb4839a842887113e061d1c9132`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/c91f566035fc4651c1592e78742e0dc1b41dfeb4839a842887113e061d1c9132) |
 
 > [!IMPORTANT]
 > Phần mềm diệt virus đánh dấu gần như mọi trình đào là "chương trình có thể không mong muốn" hoặc "trình đào coin". Đây là một loại phần mềm, không phải một mối đe dọa cụ thể, vì vậy các báo cáo VirusTotal được dẫn công khai ở trên. Chỉ tải LiteMiner từ trang này và đối chiếu tổng kiểm tra. Nếu Windows Defender xóa tệp, hãy thêm thư mục LiteMiner vào danh sách loại trừ của nó.
@@ -248,7 +250,7 @@ Trình đào dòng lệnh làm được điều tương tự qua tệp cấu hì
 | `--api-port` `API_PORT` | cổng của API JSON cục bộ chỉ đọc (mặc định: 4280) |
 | `--api-bind` `API_BIND` | địa chỉ lắng nghe của API: chỉ `127.0.0.1` (mặc định), `::1` hoặc `localhost` |
 | `--no-api` | tắt API JSON cục bộ (ứng dụng giao diện cần API này) |
-| `--thermal` `{auto,custom,off}` | bảo vệ nhiệt: `auto` (giới hạn của driver, mặc định), `custom` (`--thermal-soft/hard/resume`; tự chọn khi có các tham số này) hoặc `off` |
+| `--thermal` `{auto,custom,off}` | bảo vệ nhiệt: `auto` (mặc định: trên mọi GPU, chip giảm tốc trên 85 °C, tạm dừng ở 90 °C và tiếp tục dưới 80 °C; bộ nhớ theo giới hạn của driver nếu driver cung cấp nhiệt độ bộ nhớ), `custom` (`--thermal-soft/hard/resume`; tự chọn khi có các tham số này) hoặc `off` |
 | `--thermal-gpu` `LABEL=SOFT:HARD:RESUME` | giới hạn nhiệt độ chip riêng cho một GPU, ví dụ `gpu1=80:88:75` (lặp lại cho từng GPU; không dùng cùng `--thermal off`) |
 | `--thermal-soft` `THERMAL_SOFT` | nhiệt độ chip (°C) mà trên mức đó sẽ giảm tốc |
 | `--thermal-hard` `THERMAL_HARD` | nhiệt độ chip (°C) mà khi đạt tới sẽ tạm dừng đào |
@@ -261,9 +263,9 @@ Trình đào dòng lệnh làm được điều tương tự qua tệp cấu hì
 | `--log-file` `LOG_FILE` | tệp nhật ký (mặc định: `logs\liteminer.log`; xoay vòng khi đạt 10 MB, giữ 3 tệp) |
 | `--no-log-file` | không ghi tệp nhật ký |
 | `--log-format` `{text,json}` | đầu ra console: `text` (mặc định) hoặc mỗi dòng một bản ghi JSON (cho script) |
-| `--no-update-check` | không kiểm tra phiên bản mới (mặc định mỗi ngày đọc trang phát hành công khai một lần; chỉ gửi tên và phiên bản chương trình) |
+| `--no-update-check` | không kiểm tra phiên bản mới (mặc định cứ 3-4 giờ đọc trang phát hành công khai một lần; chỉ gửi tên và phiên bản chương trình) |
 | `--gui` | mở ứng dụng giao diện (trên Windows cũng có thể dùng `LiteMiner-GUI.exe`) |
-| `--init` | tạo các cấu hình mẫu `miner.json` và `quantus.json` trong thư mục hiện tại |
+| `--init` | tạo các cấu hình mẫu `miner.example.json` và `quantus.example.json` trong thư mục hiện tại |
 | `--runtime-info` | hiển thị thư mục chứa các tệp đã giải nén của chương trình |
 | `--verify-package` | kiểm tra mọi tệp của chương trình theo tổng kiểm tra tích hợp |
 
@@ -298,7 +300,7 @@ curl -s http://127.0.0.1:4280/api/v1/summary
 ```
 
 ```json
-{"api_version":1,"product":"LiteMiner","version":"0.4.2","algorithm":"quantus","uptime_seconds":180.4,
+{"api_version":1,"product":"LiteMiner","version":"0.5.0","algorithm":"quantus","uptime_seconds":180.4,
  "health":"ok","devices":1,"device_states":{"mining":1},"rate":518.6,"unit":"MH/s","rate_window_seconds":60,
  "shares":{"accepted":2,"rejected":0,"submitted":2,"lost_unacknowledged":0,"discarded_stale":0,"verification_rejected":0,"pending":0},
  "max_temperature_c":64,"power_w":196.0,"pools":["qtc.kryptex.network:8049"]}
@@ -310,15 +312,19 @@ API chỉ lắng nghe trên giao diện loopback (`--api-bind` nhận `127.0.0.1
 
 ## GPU và hashrate
 
-Kết quả thật của LiteMiner 0.4.2 và các bản dựng gần đây trên 67 mẫu GPU. Dấu `?` nghĩa là chúng tôi chưa đo tổ hợp đó, không phải là nó không chạy được.
+Kết quả thật của LiteMiner 0.5.0 và các bản dựng gần đây trên 73 mẫu GPU. Dấu `?` nghĩa là chúng tôi chưa đo tổ hợp đó, không phải là nó không chạy được.
 
 Mọi kết quả đều được đo với thiết lập gốc của card: LiteMiner không thay đổi xung nhịp, điện áp, giới hạn công suất hay quạt. Undervolt hoặc giới hạn công suất thấp hơn bằng công cụ của bạn được hỗ trợ đầy đủ: LiteMiner tự thích ứng với tốc độ mà card đạt được.
+
+### Hashrate được đo khi không ép xung, ở xung nhịp và giới hạn công suất (PL) mặc định
 
 #### GeForce và TITAN
 
 | GPU | PRL, TH/s | QTC, MH/s | Lần thử gần nhất |
 |---|---:|---:|---|
 | RTX 5090 | 372.6 | 1524.6 | 2026-11 |
+| RTX 5090 Laptop | ? | 508.2 | 2026-11 |
+| RTX 5090 Laptop GPU | 142.9 | 512.8 | 2026-11 |
 | RTX 5080 | 238.3 | 982.8 | 2026-11 |
 | RTX 5070 | 134.2 | 552.7 | 2026-11 |
 | RTX 5070 Ti | 204.5 | 840.8 | 2026-11 |
@@ -331,6 +337,8 @@ Mọi kết quả đều được đo với thiết lập gốc của card: Lite
 | RTX 4070 SUPER | 127.1 | 456.8 | 2026-11 |
 | RTX 4070 Ti SUPER | 170.2 | 686.7 | 2026-11 |
 | RTX 4060 | 64.3 | 266.8 | 2026-11 |
+| RTX 4060 Laptop | ? | 144.8 | 2026-11 |
+| RTX 4060 Laptop GPU | 50.7 | 145.5 | 2026-11 |
 | RTX 4060 Ti | 95.1 | 379.3 | 2026-11 |
 | RTX 3090 | 148.5 | 619.1 | 2026-11 |
 | RTX 3090 Ti | 150.2 | 619.6 | 2026-11 |
@@ -339,13 +347,16 @@ Mọi kết quả đều được đo với thiết lập gốc của card: Lite
 | RTX 3070 | 80.9 | 331.7 | 2026-11 |
 | RTX 3070 Ti | 95.3 | 389.4 | 2026-11 |
 | RTX 3060 | 54.6 | 227.9 | 2026-11 |
+| RTX 3060 laptop | 53.0 | 193.2 | 2026-11 |
+| RTX 3060 Laptop GPU | 52.7 | 193.6 | 2026-11 |
 | RTX 3060 Ti | 70.8 | 296.0 | 2026-11 |
 | RTX 3050 | 36.5 | 154.6 | 2026-11 |
-| RTX 3050 Laptop GPU | 29.6 | ? | 2026-11 |
+| RTX 3050 Laptop | ? | 93.6 | 2026-11 |
+| RTX 3050 Laptop GPU | 29.6 | 94.0 | 2026-11 |
 | RTX 2080 | 81.9 | 371.8 | 2026-11 |
 | RTX 2080 Ti | 94.5 | 418.0 | 2026-11 |
 | RTX 2070 | 58.1 | 257.1 | 2026-11 |
-| RTX 2070 SUPER | 57.7 | 273.5 | 2026-11 |
+| RTX 2070 SUPER | 57.2 | 273.5 | 2026-11 |
 | RTX 2060 | 47.4 | 227.1 | 2026-11 |
 | RTX 2060 SUPER | 52.8 | 234.1 | 2026-11 |
 | GTX 1660 | 2.50 | 47.4 | 2026-11 |
@@ -377,7 +388,7 @@ Mọi kết quả đều được đo với thiết lập gốc của card: Lite
 
 | GPU | PRL, TH/s | QTC, MH/s | Lần thử gần nhất |
 |---|---:|---:|---|
-| A10 | 75.7 | 333.9 | 2026-10 |
+| A10 | 92.8 | 396.6 | 2026-11 |
 | A100 PCIe | 194.7 | 404.8 | 2026-10 |
 | Quadro P4000 | 5.60 | 44.7 | 2026-11 |
 | RTX A2000 | 29.2 | 137.6 | 2026-10 |
@@ -389,17 +400,16 @@ Mọi kết quả đều được đo với thiết lập gốc của card: Lite
 | Tesla T4 | 35.2 | 170.2 | 2026-11 |
 | Tesla V100 | 41.2 | 486.3 | 2026-11 |
 | Tesla V100 SXM2 16 GB | 30.6 | 347.1 | 2026-11 |
-| Tesla V100S | 18.8 | 248.9 | 2026-11 |
 
 #### AMD Radeon
 
 | GPU | PRL, TH/s | QTC, MH/s | Lần thử gần nhất |
 |---|---:|---:|---|
 | RX 9070 XT | 137.7 | 293.2 | 2026-11 |
-| RX 9060 XT | 67.9 | 151.9 | 2026-11 |
+| RX 9060 XT | 70.7 | 160.3 | 2026-11 |
 | RX 7900 XT | 48.0 | 334.3 | 2026-11 |
 | RX 7900 XTX | 59.6 | 396.4 | 2026-11 |
-| RX 7800 XT | 31.8 | 226.6 | 2026-11 |
+| RX 7800 XT | 31.8 | 235.2 | 2026-11 |
 
 Card của bạn không có trong bảng, hoặc chậm hơn ở đây? Chạy `LiteMiner -B` (mặc định 15 phút) và gửi kết quả tới [lmsupp@proton.me](mailto:lmsupp@proton.me).
 
@@ -424,7 +434,7 @@ Cài driver mới nhất từ [NVIDIA](https://www.nvidia.com/Download/index.asp
 <details>
 <summary><b>Phần mềm diệt virus đã xóa LiteMiner</b></summary>
 
-Hầu hết phần mềm diệt virus đánh dấu trình đào theo loại, chứ không phải vì một mối đe dọa cụ thể. Đối chiếu tệp với `SHA256SUMS.txt` và báo cáo VirusTotal trong mục [Tải về và tổng kiểm tra](#tải-về-và-tổng-kiểm-tra), sau đó thêm thư mục LiteMiner vào danh sách loại trừ.
+Hầu hết phần mềm diệt virus đánh dấu trình đào theo loại, chứ không phải vì một mối đe dọa cụ thể. Đối chiếu tệp với `SHA256SUMS.txt` và báo cáo VirusTotal trong mục [Tải về và tổng kiểm tra](#tải-về-và-tổng-kiểm-tra), sau đó thêm thư mục LiteMiner vào danh sách loại trừ. LiteMiner giải nén các tệp chương trình vào thư mục `.liteminer-runtime-v2` cạnh tệp EXE, hoặc vào `%TEMP%` nếu thư mục của nó chỉ đọc. Nếu vẫn không khởi động được, thông báo lỗi sẽ nêu các thư mục nó đã thử: hãy thêm cả các thư mục đó vào danh sách loại trừ hoặc cho phép chúng trong AppLocker.
 </details>
 
 <details>
@@ -448,6 +458,8 @@ Chọn chế độ *Tự động* trong ứng dụng (`--background` trong dòng
 ## Hỗ trợ
 
 Câu hỏi, báo lỗi và kết quả benchmark xin gửi về: [lmsupp@proton.me](mailto:lmsupp@proton.me).
+
+Hoặc nhắn tin cho chúng tôi: Telegram [@liteminergpu](https://t.me/liteminergpu) · Discord [liteminer.support](https://discord.com/users/1572214196995624980)
 
 Trước khi viết, hãy chạy `LiteMiner --list-devices` và đính kèm kết quả cùng với `logs/liteminer.log`.
 

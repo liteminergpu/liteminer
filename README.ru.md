@@ -12,8 +12,10 @@
 <a href="#видеокарты-и-хешрейт"><img alt="GPUs" src="https://img.shields.io/badge/GPU-NVIDIA%20%7C%20AMD-76b900?logo=nvidia&logoColor=white"></a>
 <a href="#монеты-алгоритмы-и-комиссия"><img alt="Coins" src="https://img.shields.io/badge/coins-PRL%20%7C%20QTC-e8a33d"></a>
 <a href="#монеты-алгоритмы-и-комиссия"><img alt="Dev fee" src="https://img.shields.io/badge/dev%20fee-2%25-555555"></a>
-<a href="https://www.virustotal.com/gui/file/f495dddb5ba706bedd41426fa79ff91ff9dc1de93fbb1239bd05bb43dc2c94ce"><img alt="VirusTotal" src="https://img.shields.io/badge/VirusTotal-report-394eff?logo=virustotal&logoColor=white"></a>
+<a href="https://www.virustotal.com/gui/file/5cecc0f5b6d505474d1881a279007852ee61bf670a7b5deefe0d298844d74180"><img alt="VirusTotal" src="https://img.shields.io/badge/VirusTotal-report-394eff?logo=virustotal&logoColor=white"></a>
 <a href="#поддержка"><img alt="Support" src="https://img.shields.io/badge/support-lmsupp%40proton.me-6d4aff?logo=protonmail&logoColor=white"></a>
+<a href="https://t.me/liteminergpu"><img alt="Telegram" src="https://img.shields.io/badge/Telegram-%40liteminergpu-26A5E4?logo=telegram&logoColor=white"></a>
+<a href="https://discord.com/users/1572214196995624980"><img alt="Discord" src="https://img.shields.io/badge/Discord-liteminer.support-5865F2?logo=discord&logoColor=white"></a>
 <a href="#лицензия"><img alt="License" src="https://img.shields.io/badge/license-freeware%2C%20closed%20source-lightgrey"></a>
 </p>
 
@@ -68,7 +70,7 @@ LiteMiner - майнер, который вы всегда хотели: акт�
 
 ### Windows
 
-1. [Скачайте последний выпуск](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-windows-x64-portable.zip) (`LiteMiner-0.4.2-windows-x64-portable.zip`).
+1. [Скачайте последний выпуск](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-windows-x64-portable.zip) (`LiteMiner-0.5.0-windows-x64-portable.zip`).
 2. Распакуйте архив в любую папку.
 3. Запустите **`LiteMiner-GUI.exe`**. Дальше вас проведёт помощник настройки.
 
@@ -82,10 +84,10 @@ LiteMiner.exe -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLE
 Или скачайте, распакуйте и запустите его одной командой PowerShell:
 
 ```powershell
-irm https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-windows-x64-portable.zip -OutFile LiteMiner.zip; Expand-Archive LiteMiner.zip .; .\LiteMiner-0.4.2-windows-x64\LiteMiner-GUI.exe
+irm https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-windows-x64-portable.zip -OutFile LiteMiner.zip; Expand-Archive LiteMiner.zip .; .\LiteMiner-0.5.0-windows-x64\LiteMiner-GUI.exe
 ```
 
-Требования: Windows 10 или 11 (x64) и актуальный драйвер видеокарты.
+Требования: Windows 10 или 11 (x64) и актуальный драйвер видеокарты. Графическому приложению нужна Windows 10 версии 1809 или новее, консольный майнер (`LiteMiner.exe` и `.bat`-файлы) работает на любой Windows 10 x64.
 
 > [!TIP]
 > Ещё нет кошелька? Бесплатный [аккаунт Kryptex](https://www.kryptex.com/register?ref=b629c482) подходит для обеих монет: укажите его имя пользователя (`krxXXXXXX`) вместо кошелька, а Kryptex выплатит заработанное в BTC или USDT - как вы выберете.
@@ -97,13 +99,13 @@ irm https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner
 Pearl:
 
 ```bash
-curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.4.2-linux-x64 && ./LiteMiner -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
+curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.5.0-linux-x64 && ./LiteMiner -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
 ```
 
 Quantus:
 
 ```bash
-curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.4.2-linux-x64 && ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w rig1
+curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.5.0-linux-x64 && ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w rig1
 ```
 
 В той же папке лежит графическое приложение: `./LiteMiner-GUI`.
@@ -112,13 +114,13 @@ curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/Li
 
 ```bash
 # Debian, Ubuntu, Linux Mint, Pop!_OS
-wget https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer_0.4.2_amd64.deb https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-gui_0.4.2_amd64.deb
-sudo apt install ./liteminer_0.4.2_amd64.deb ./liteminer-gui_0.4.2_amd64.deb
+wget https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer_0.5.0_amd64.deb https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui_0.5.0_amd64.deb
+sudo apt install ./liteminer_0.5.0_amd64.deb ./liteminer-gui_0.5.0_amd64.deb
 ```
 
 ```bash
 # Fedora, RHEL, AlmaLinux, Rocky Linux (openSUSE: sudo zypper install ...)
-sudo dnf install https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-0.4.2-1.x86_64.rpm https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-gui-0.4.2-1.x86_64.rpm
+sudo dnf install https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0-1.x86_64.rpm https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui-0.5.0-1.x86_64.rpm
 ```
 
 Пакет `liteminer` содержит консольный майнер для серверов и ригов, `liteminer-gui` добавляет графическое приложение. Чтобы запустить майнер как службу, выполните `sudo systemctl enable --now liteminer@YOUR_USER`; служба читает `~/.local/share/liteminer/miner.json`. Подробнее: `man liteminer`.
@@ -132,7 +134,7 @@ sudo dnf install https://github.com/liteminergpu/liteminer/releases/download/v0.
 | Поле | Значение |
 |---|---|
 | Miner name | `liteminer` (заполнится из URL) |
-| Installation URL | `https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-0.4.2.tar.gz` |
+| Installation URL | `https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0.tar.gz` |
 | Hash algorithm | `pearl` или `quantus` |
 | Wallet and worker template | `%WAL%.%WORKER_NAME%` |
 | Pool URL | `stratum+ssl://prl.kryptex.network:8048` (Pearl) или `stratum+ssl://qtc.kryptex.network:8049` (Quantus) |
@@ -147,36 +149,36 @@ Docker нужен хост с Linux (или Windows с Docker Desktop и WSL 2),
 
 ```bash
 docker run -d --name liteminer --gpus all --restart unless-stopped -v liteminer-data:/data \
-  liteminer/liteminer:0.4.2 -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
+  liteminer/liteminer:0.5.0 -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
 docker logs -f liteminer
 ```
 
 Вместо параметров контейнер принимает и переменные окружения `LITEMINER_ALGORITHM`, `LITEMINER_POOL`, `LITEMINER_WALLET`, `LITEMINER_WORKER`, `LITEMINER_PASSWORD` и `LITEMINER_DEVICES`. Сохраняйте том `/data`: в нём журналы и результаты подстройки каждой видеокарты, поэтому после перезапуска подстройка не повторяется. `docker stop -t 60 liteminer` даёт каждой видеокарте закончить текущую работу.
 
-В GPU-облаке выберите образ `liteminer/liteminer:0.4.2` и задайте `LITEMINER_ALGORITHM`, `LITEMINER_POOL` и `LITEMINER_WALLET` в переменных окружения шаблона. Или возьмите любой образ Ubuntu с CUDA (например, `nvidia/cuda:12.4.1-base-ubuntu22.04`) и укажите этот скрипт запуска (on-start script):
+В GPU-облаке выберите образ `liteminer/liteminer:0.5.0` и задайте `LITEMINER_ALGORITHM`, `LITEMINER_POOL` и `LITEMINER_WALLET` в переменных окружения шаблона. Или возьмите любой образ Ubuntu с CUDA (например, `nvidia/cuda:12.4.1-base-ubuntu22.04`) и укажите этот скрипт запуска (on-start script):
 
 ```bash
 apt-get update && apt-get install -y --no-install-recommends ca-certificates curl
-curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-linux-x64-portable.tar.gz | tar -xz -C /opt
-cd /opt/LiteMiner-0.4.2-linux-x64 && nohup ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w cloud1 > /var/log/liteminer.log 2>&1 &
+curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz | tar -xz -C /opt
+cd /opt/LiteMiner-0.5.0-linux-x64 && nohup ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w cloud1 > /var/log/liteminer.log 2>&1 &
 ```
 
 Майнить будут все видеокарты инстанса. Журнал можно смотреть командой `tail -f /var/log/liteminer.log`. Арендованные серверы часто работают горячими намеренно: если температурой управляет провайдер, `--thermal off` оставит её ему.
 
 ## Загрузки и контрольные суммы
 
-Все файлы выпуска 0.4.2 - на [странице выпусков](https://github.com/liteminergpu/liteminer/releases/latest). Чтобы сверить загруженный файл с `SHA256SUMS.txt`, выполните `certutil -hashfile ФАЙЛ SHA256` в Windows или `sha256sum -c --ignore-missing SHA256SUMS.txt` в Linux.
+Все файлы выпуска 0.5.0 - на [странице выпусков](https://github.com/liteminergpu/liteminer/releases/latest). Чтобы сверить загруженный файл с `SHA256SUMS.txt`, выполните `certutil -hashfile ФАЙЛ SHA256` в Windows или `sha256sum -c --ignore-missing SHA256SUMS.txt` в Linux.
 
 | Платформа | Файл | Размер | SHA-256 | Проверка |
 |---|---|---:|---|---|
-| Windows x64 | [`LiteMiner-0.4.2-windows-x64-portable.zip`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-windows-x64-portable.zip) | 80.8 МБ | <sub>`f495dddb5ba706bedd41426fa79ff91ff9dc1de93fbb1239bd05bb43dc2c94ce`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/f495dddb5ba706bedd41426fa79ff91ff9dc1de93fbb1239bd05bb43dc2c94ce) |
-| Linux x64 | [`LiteMiner-0.4.2-linux-x64-portable.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-linux-x64-portable.tar.gz) | 103.3 МБ | <sub>`8968150c50ac470bbcaf40f414dc4c83201883a67b60968c43ec196a7d030007`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/8968150c50ac470bbcaf40f414dc4c83201883a67b60968c43ec196a7d030007) |
-| HiveOS | [`liteminer-0.4.2.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-0.4.2.tar.gz) | 29.0 МБ | <sub>`7ce474cb580e1f3114ef2453f66a36681d996a78c9d7148125a35bda238724bf`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/7ce474cb580e1f3114ef2453f66a36681d996a78c9d7148125a35bda238724bf) |
-| Docker (контекст сборки) | [`LiteMiner-0.4.2-docker.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/LiteMiner-0.4.2-docker.tar.gz) | 29.0 МБ | <sub>`c6c42b3e6d00e0faedca497592b6fe8955a4fd1ea38263829518d29526d6fc34`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/c6c42b3e6d00e0faedca497592b6fe8955a4fd1ea38263829518d29526d6fc34) |
-| Debian / Ubuntu | [`liteminer_0.4.2_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer_0.4.2_amd64.deb) | 29.1 МБ | <sub>`a9213322d7d36732e845aba9f26c382260cfef3986f162bf87c8dc4fce474f7f`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/a9213322d7d36732e845aba9f26c382260cfef3986f162bf87c8dc4fce474f7f) |
-| Debian / Ubuntu | [`liteminer-gui_0.4.2_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-gui_0.4.2_amd64.deb) | 45.3 МБ | <sub>`bb887052ca8807b846026ba0d4f5ce042b2f202ecb4bbbf71d47206388fe0122`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/bb887052ca8807b846026ba0d4f5ce042b2f202ecb4bbbf71d47206388fe0122) |
-| Fedora / RHEL / openSUSE | [`liteminer-0.4.2-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-0.4.2-1.x86_64.rpm) | 24.4 МБ | <sub>`7e0f6c9d748eae775a96338d46958384696aefd3726fd28706b56bc59ad531dc`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/7e0f6c9d748eae775a96338d46958384696aefd3726fd28706b56bc59ad531dc) |
-| Fedora / RHEL / openSUSE | [`liteminer-gui-0.4.2-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.4.2/liteminer-gui-0.4.2-1.x86_64.rpm) | 31.2 МБ | <sub>`fbf9a0fc2d4627a3dc490f1f365f36359ca11e04ed78ab9246d2d201543d34eb`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/fbf9a0fc2d4627a3dc490f1f365f36359ca11e04ed78ab9246d2d201543d34eb) |
+| Windows x64 | [`LiteMiner-0.5.0-windows-x64-portable.zip`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-windows-x64-portable.zip) | 86.4 МБ | <sub>`5cecc0f5b6d505474d1881a279007852ee61bf670a7b5deefe0d298844d74180`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/5cecc0f5b6d505474d1881a279007852ee61bf670a7b5deefe0d298844d74180) |
+| Linux x64 | [`LiteMiner-0.5.0-linux-x64-portable.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz) | 109.3 МБ | <sub>`7012cf25d79081b5ae33163734b801453495fa2859ba716dad045621b906f297`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/7012cf25d79081b5ae33163734b801453495fa2859ba716dad045621b906f297) |
+| HiveOS | [`liteminer-0.5.0.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0.tar.gz) | 31.7 МБ | <sub>`6c481944cac595bc3ae9ea9c75fb4d5fc53356ba899c3cc0f29925e71f2a38e1`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/6c481944cac595bc3ae9ea9c75fb4d5fc53356ba899c3cc0f29925e71f2a38e1) |
+| Docker (контекст сборки) | [`LiteMiner-0.5.0-docker.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-docker.tar.gz) | 31.7 МБ | <sub>`f9bb75ecc0e61766fed48b95fc1747d9f7f7b8b8da2665b8bc71a87f0b6a786f`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/f9bb75ecc0e61766fed48b95fc1747d9f7f7b8b8da2665b8bc71a87f0b6a786f) |
+| Debian / Ubuntu | [`liteminer_0.5.0_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer_0.5.0_amd64.deb) | 31.9 МБ | <sub>`cbe27b0df79958b9157d1ce2f96ecd2232d8f26b87a65f896a06540d8c7ba4e2`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/cbe27b0df79958b9157d1ce2f96ecd2232d8f26b87a65f896a06540d8c7ba4e2) |
+| Debian / Ubuntu | [`liteminer-gui_0.5.0_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui_0.5.0_amd64.deb) | 45.8 МБ | <sub>`a594191023ad6e0d82421c54c0531d40eb8ead8ff145b21e1c5464c71448f7f6`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/a594191023ad6e0d82421c54c0531d40eb8ead8ff145b21e1c5464c71448f7f6) |
+| Fedora / RHEL / openSUSE | [`liteminer-0.5.0-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0-1.x86_64.rpm) | 26.4 МБ | <sub>`02303eedc01ce0827e2be8af725a99411a43d713b9078f95dce4ccd81cb48b87`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/02303eedc01ce0827e2be8af725a99411a43d713b9078f95dce4ccd81cb48b87) |
+| Fedora / RHEL / openSUSE | [`liteminer-gui-0.5.0-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui-0.5.0-1.x86_64.rpm) | 31.5 МБ | <sub>`c91f566035fc4651c1592e78742e0dc1b41dfeb4839a842887113e061d1c9132`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/c91f566035fc4651c1592e78742e0dc1b41dfeb4839a842887113e061d1c9132) |
 
 > [!IMPORTANT]
 > Антивирусы помечают почти любой майнер как «потенциально нежелательную программу» или «майнер криптовалюты». Это категория, а не конкретная угроза, поэтому отчёты VirusTotal выше приведены открыто. Скачивайте LiteMiner только с этой страницы и сверяйте контрольную сумму. Если Защитник Windows удалил файл, добавьте папку LiteMiner в его исключения.
@@ -248,7 +250,7 @@ LiteMiner работает с любым пулом, который поддер
 | `--api-port` `API_PORT` | порт локального JSON API только для чтения (по умолчанию 4280) |
 | `--api-bind` `API_BIND` | адрес API: только `127.0.0.1` (по умолчанию), `::1` или `localhost` |
 | `--no-api` | отключить локальный JSON API (он нужен графическому приложению) |
-| `--thermal` `{auto,custom,off}` | защита от перегрева: `auto` (пределы драйвера, по умолчанию), `custom` (`--thermal-soft/hard/resume`; включается сама, если они заданы) или `off` |
+| `--thermal` `{auto,custom,off}` | защита от перегрева: `auto` (по умолчанию: чип замедляется выше 85 °C, пауза при 90 °C, продолжение ниже 80 °C на любой видеокарте; память - по пределу драйвера, если он сообщает её температуру), `custom` (`--thermal-soft/hard/resume`; включается сама, если они заданы) или `off` |
 | `--thermal-gpu` `LABEL=SOFT:HARD:RESUME` | свои пределы чипа для одной видеокарты, например `gpu1=80:88:75` (повторяйте для каждой; не вместе с `--thermal off`) |
 | `--thermal-soft` `THERMAL_SOFT` | своя температура чипа, °C, выше которой майнер замедляется |
 | `--thermal-hard` `THERMAL_HARD` | своя температура чипа, °C, при которой майнинг встаёт на паузу |
@@ -261,9 +263,9 @@ LiteMiner работает с любым пулом, который поддер
 | `--log-file` `LOG_FILE` | файл журнала (по умолчанию `logs\liteminer.log`; ротация при 10 МБ, хранятся 3 файла) |
 | `--no-log-file` | не писать журнал в файл |
 | `--log-format` `{text,json}` | вывод в консоль: `text` (по умолчанию) или по одной JSON-записи на строку (для скриптов) |
-| `--no-update-check` | не проверять наличие новой версии (по умолчанию раз в сутки читается публичная страница выпусков; передаются только название и версия программы) |
+| `--no-update-check` | не проверять наличие новой версии (по умолчанию раз в 3-4 часа читается публичная страница выпусков; передаются только название и версия программы) |
 | `--gui` | открыть графическое приложение (в Windows также `LiteMiner-GUI.exe`) |
-| `--init` | создать примеры конфигураций `miner.json` и `quantus.json` в текущей папке |
+| `--init` | создать примеры конфигураций `miner.example.json` и `quantus.example.json` в текущей папке |
 | `--runtime-info` | показать папку с распакованными файлами программы |
 | `--verify-package` | проверить все файлы программы по встроенным контрольным суммам |
 
@@ -298,7 +300,7 @@ curl -s http://127.0.0.1:4280/api/v1/summary
 ```
 
 ```json
-{"api_version":1,"product":"LiteMiner","version":"0.4.2","algorithm":"quantus","uptime_seconds":180.4,
+{"api_version":1,"product":"LiteMiner","version":"0.5.0","algorithm":"quantus","uptime_seconds":180.4,
  "health":"ok","devices":1,"device_states":{"mining":1},"rate":518.6,"unit":"MH/s","rate_window_seconds":60,
  "shares":{"accepted":2,"rejected":0,"submitted":2,"lost_unacknowledged":0,"discarded_stale":0,"verification_rejected":0,"pending":0},
  "max_temperature_c":64,"power_w":196.0,"pools":["qtc.kryptex.network:8049"]}
@@ -310,15 +312,19 @@ API слушает только локальный интерфейс (`--api-bi
 
 ## Видеокарты и хешрейт
 
-Реальные результаты LiteMiner 0.4.2 и его недавних сборок на 67 моделях видеокарт. Знак `?` означает, что мы ещё не измеряли эту пару, а не что она не работает.
+Реальные результаты LiteMiner 0.5.0 и его недавних сборок на 73 моделях видеокарт. Знак `?` означает, что мы ещё не измеряли эту пару, а не что она не работает.
 
 Все результаты получены на собственных настройках карт: LiteMiner не менял частоты, напряжения, лимиты мощности и вентиляторы. Андервольт и сниженный лимит мощности в вашей программе полностью поддерживаются: LiteMiner подстраивается под ту скорость, которую выдаёт карта.
+
+### Хешрейт указан без разгона, на стандартных частотах и PL
 
 #### GeForce и TITAN
 
 | Видеокарта | PRL, TH/s | QTC, MH/s | Последний тест |
 |---|---:|---:|---|
 | RTX 5090 | 372.6 | 1524.6 | 2026-11 |
+| RTX 5090 Laptop | ? | 508.2 | 2026-11 |
+| RTX 5090 Laptop GPU | 142.9 | 512.8 | 2026-11 |
 | RTX 5080 | 238.3 | 982.8 | 2026-11 |
 | RTX 5070 | 134.2 | 552.7 | 2026-11 |
 | RTX 5070 Ti | 204.5 | 840.8 | 2026-11 |
@@ -331,6 +337,8 @@ API слушает только локальный интерфейс (`--api-bi
 | RTX 4070 SUPER | 127.1 | 456.8 | 2026-11 |
 | RTX 4070 Ti SUPER | 170.2 | 686.7 | 2026-11 |
 | RTX 4060 | 64.3 | 266.8 | 2026-11 |
+| RTX 4060 Laptop | ? | 144.8 | 2026-11 |
+| RTX 4060 Laptop GPU | 50.7 | 145.5 | 2026-11 |
 | RTX 4060 Ti | 95.1 | 379.3 | 2026-11 |
 | RTX 3090 | 148.5 | 619.1 | 2026-11 |
 | RTX 3090 Ti | 150.2 | 619.6 | 2026-11 |
@@ -339,13 +347,16 @@ API слушает только локальный интерфейс (`--api-bi
 | RTX 3070 | 80.9 | 331.7 | 2026-11 |
 | RTX 3070 Ti | 95.3 | 389.4 | 2026-11 |
 | RTX 3060 | 54.6 | 227.9 | 2026-11 |
+| RTX 3060 laptop | 53.0 | 193.2 | 2026-11 |
+| RTX 3060 Laptop GPU | 52.7 | 193.6 | 2026-11 |
 | RTX 3060 Ti | 70.8 | 296.0 | 2026-11 |
 | RTX 3050 | 36.5 | 154.6 | 2026-11 |
-| RTX 3050 Laptop GPU | 29.6 | ? | 2026-11 |
+| RTX 3050 Laptop | ? | 93.6 | 2026-11 |
+| RTX 3050 Laptop GPU | 29.6 | 94.0 | 2026-11 |
 | RTX 2080 | 81.9 | 371.8 | 2026-11 |
 | RTX 2080 Ti | 94.5 | 418.0 | 2026-11 |
 | RTX 2070 | 58.1 | 257.1 | 2026-11 |
-| RTX 2070 SUPER | 57.7 | 273.5 | 2026-11 |
+| RTX 2070 SUPER | 57.2 | 273.5 | 2026-11 |
 | RTX 2060 | 47.4 | 227.1 | 2026-11 |
 | RTX 2060 SUPER | 52.8 | 234.1 | 2026-11 |
 | GTX 1660 | 2.50 | 47.4 | 2026-11 |
@@ -377,7 +388,7 @@ API слушает только локальный интерфейс (`--api-bi
 
 | Видеокарта | PRL, TH/s | QTC, MH/s | Последний тест |
 |---|---:|---:|---|
-| A10 | 75.7 | 333.9 | 2026-10 |
+| A10 | 92.8 | 396.6 | 2026-11 |
 | A100 PCIe | 194.7 | 404.8 | 2026-10 |
 | Quadro P4000 | 5.60 | 44.7 | 2026-11 |
 | RTX A2000 | 29.2 | 137.6 | 2026-10 |
@@ -389,17 +400,16 @@ API слушает только локальный интерфейс (`--api-bi
 | Tesla T4 | 35.2 | 170.2 | 2026-11 |
 | Tesla V100 | 41.2 | 486.3 | 2026-11 |
 | Tesla V100 SXM2 16 GB | 30.6 | 347.1 | 2026-11 |
-| Tesla V100S | 18.8 | 248.9 | 2026-11 |
 
 #### AMD Radeon
 
 | Видеокарта | PRL, TH/s | QTC, MH/s | Последний тест |
 |---|---:|---:|---|
 | RX 9070 XT | 137.7 | 293.2 | 2026-11 |
-| RX 9060 XT | 67.9 | 151.9 | 2026-11 |
+| RX 9060 XT | 70.7 | 160.3 | 2026-11 |
 | RX 7900 XT | 48.0 | 334.3 | 2026-11 |
 | RX 7900 XTX | 59.6 | 396.4 | 2026-11 |
-| RX 7800 XT | 31.8 | 226.6 | 2026-11 |
+| RX 7800 XT | 31.8 | 235.2 | 2026-11 |
 
 Вашей карты нет или она медленнее, чем здесь? Запустите `LiteMiner -B` (по умолчанию 15 минут) и пришлите результат на [lmsupp@proton.me](mailto:lmsupp@proton.me).
 
@@ -424,7 +434,7 @@ API слушает только локальный интерфейс (`--api-bi
 <details>
 <summary><b>Антивирус удалил LiteMiner</b></summary>
 
-Большинство антивирусов помечает майнеры по категории, а не из-за конкретной угрозы. Сверьте файл с `SHA256SUMS.txt` и отчётом VirusTotal в разделе [Загрузки и контрольные суммы](#загрузки-и-контрольные-суммы), затем добавьте папку LiteMiner в исключения.
+Большинство антивирусов помечает майнеры по категории, а не из-за конкретной угрозы. Сверьте файл с `SHA256SUMS.txt` и отчётом VirusTotal в разделе [Загрузки и контрольные суммы](#загрузки-и-контрольные-суммы), затем добавьте папку LiteMiner в исключения. LiteMiner распаковывает свои файлы в папку `.liteminer-runtime-v2` рядом с EXE, а если его папка доступна только для чтения - в `%TEMP%`. Если он всё равно не запускается, сообщение об ошибке назовёт папки, которые он пробовал: добавьте их тоже в исключения или разрешите в AppLocker.
 </details>
 
 <details>
@@ -448,6 +458,8 @@ API слушает только локальный интерфейс (`--api-bi
 ## Поддержка
 
 Вопросы, сообщения об ошибках и результаты бенчмарков: [lmsupp@proton.me](mailto:lmsupp@proton.me).
+
+Или напишите нам: Telegram [@liteminergpu](https://t.me/liteminergpu) · Discord [liteminer.support](https://discord.com/users/1572214196995624980)
 
 Перед тем как написать, выполните `LiteMiner --list-devices` и приложите его вывод вместе с `logs/liteminer.log`.
 
