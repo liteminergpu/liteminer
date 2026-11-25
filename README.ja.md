@@ -12,7 +12,7 @@
 <a href="#gpu-とハッシュレート"><img alt="GPUs" src="https://img.shields.io/badge/GPU-NVIDIA%20%7C%20AMD-76b900?logo=nvidia&logoColor=white"></a>
 <a href="#通貨アルゴリズム開発者手数料"><img alt="Coins" src="https://img.shields.io/badge/coins-PRL%20%7C%20QTC-e8a33d"></a>
 <a href="#通貨アルゴリズム開発者手数料"><img alt="Dev fee" src="https://img.shields.io/badge/dev%20fee-2%25-555555"></a>
-<a href="https://www.virustotal.com/gui/file/5cecc0f5b6d505474d1881a279007852ee61bf670a7b5deefe0d298844d74180"><img alt="VirusTotal" src="https://img.shields.io/badge/VirusTotal-report-394eff?logo=virustotal&logoColor=white"></a>
+<a href="https://www.virustotal.com/gui/file/5c1f965892905f51f715a3e71ae90a9c078eecf9d14a827551a40176b129e831"><img alt="VirusTotal" src="https://img.shields.io/badge/VirusTotal-report-394eff?logo=virustotal&logoColor=white"></a>
 <a href="#サポート"><img alt="Support" src="https://img.shields.io/badge/support-lmsupp%40proton.me-6d4aff?logo=protonmail&logoColor=white"></a>
 <a href="https://t.me/liteminergpu"><img alt="Telegram" src="https://img.shields.io/badge/Telegram-%40liteminergpu-26A5E4?logo=telegram&logoColor=white"></a>
 <a href="https://discord.com/users/1572214196995624980"><img alt="Discord" src="https://img.shields.io/badge/Discord-liteminer.support-5865F2?logo=discord&logoColor=white"></a>
@@ -70,7 +70,7 @@ LiteMiner は、あなたがずっと求めていたマイナーです。GPU ア
 
 ### Windows
 
-1. [最新リリースをダウンロード](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-windows-x64-portable.zip)（`LiteMiner-0.5.0-windows-x64-portable.zip`）します。
+1. [最新リリースをダウンロード](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-windows-x64-portable.zip)（`LiteMiner-0.5.1-windows-x64-portable.zip`）します。
 2. アーカイブを任意のフォルダーに展開します。
 3. **`LiteMiner-GUI.exe`** を起動します。あとはセットアップアシスタントが案内します。
 
@@ -84,7 +84,7 @@ LiteMiner.exe -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLE
 PowerShell のコマンド 1 つで、ダウンロード、展開、起動まで行うこともできます。
 
 ```powershell
-irm https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-windows-x64-portable.zip -OutFile LiteMiner.zip; Expand-Archive LiteMiner.zip .; .\LiteMiner-0.5.0-windows-x64\LiteMiner-GUI.exe
+irm https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-windows-x64-portable.zip -OutFile LiteMiner.zip; Expand-Archive LiteMiner.zip .; .\LiteMiner-0.5.1-windows-x64\LiteMiner-GUI.exe
 ```
 
 動作環境: Windows 10 または 11（x64）と最新のグラフィックスドライバー。デスクトップアプリには Windows 10 バージョン 1809 以降が必要です。ターミナル版マイナー（`LiteMiner.exe` と `.bat` ファイル）はすべての Windows 10 x64 で動作します。
@@ -99,13 +99,13 @@ irm https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner
 Pearl:
 
 ```bash
-curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.5.0-linux-x64 && ./LiteMiner -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
+curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.5.1-linux-x64 && ./LiteMiner -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
 ```
 
 Quantus:
 
 ```bash
-curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.5.0-linux-x64 && ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w rig1
+curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.5.1-linux-x64 && ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w rig1
 ```
 
 同じフォルダーにデスクトップアプリもあります: `./LiteMiner-GUI`
@@ -114,13 +114,21 @@ curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/Li
 
 ```bash
 # Debian, Ubuntu, Linux Mint, Pop!_OS
-wget https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer_0.5.0_amd64.deb https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui_0.5.0_amd64.deb
-sudo apt install ./liteminer_0.5.0_amd64.deb ./liteminer-gui_0.5.0_amd64.deb
+wget https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer_0.5.1_amd64.deb https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-gui_0.5.1_amd64.deb
+sudo apt install ./liteminer_0.5.1_amd64.deb ./liteminer-gui_0.5.1_amd64.deb
 ```
 
 ```bash
 # Fedora, RHEL, AlmaLinux, Rocky Linux (openSUSE: sudo zypper install ...)
-sudo dnf install https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0-1.x86_64.rpm https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui-0.5.0-1.x86_64.rpm
+sudo dnf install https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-0.5.1-1.x86_64.rpm https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-gui-0.5.1-1.x86_64.rpm
+```
+
+```bash
+# Flatpak
+wget https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1.flatpak
+flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install --user ./LiteMiner-0.5.1.flatpak
+flatpak run org.liteminer.LiteMiner
 ```
 
 `liteminer` パッケージにはサーバーやリグ向けのターミナル版マイナーが含まれ、`liteminer-gui` はデスクトップアプリを追加します。マイナーをサービスとして動かすには `sudo systemctl enable --now liteminer@YOUR_USER` を実行します。サービスは `~/.local/share/liteminer/miner.json` を読み込みます。詳しくは `man liteminer` をご覧ください。
@@ -129,19 +137,23 @@ sudo dnf install https://github.com/liteminergpu/liteminer/releases/download/v0.
 
 ### HiveOS
 
+すばやく設定するには、HiveOS アーカイブ内の README.md から PRL または QTC のフライトシートをインポートし、ウォレットを選びます。
+
+HiveOS では Pearl のコインは **PRL**、Quantus は **QUAN** です。HiveOS の QTC は別のコイン (QubitCoin) です。
+
 フライトシートを作成します。**Coin** にはあなたの通貨、**Wallet** にはあなたのウォレット、**Pool** には *Configure in miner*、**Miner** には *Custom* を選びます。次に **Setup Miner Config** をクリックし、以下を入力します。
 
 | 項目 | 値 |
 |---|---|
 | Miner name | `liteminer` (URL から自動入力) |
-| Installation URL | `https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0.tar.gz` |
-| Hash algorithm | `pearl` または `quantus` |
-| Wallet and worker template | `%WAL%.%WORKER_NAME%` |
+| Installation URL | `https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-0.5.1.tar.gz` |
+| Hash algorithm | `pearlhash` または `quantus` |
+| Wallet and worker template | `%WAL%.%WORKER_NAME%` または `%WAL%/%WORKER_NAME%` |
 | Pool URL | `stratum+ssl://prl.kryptex.network:8048` (Pearl) または `stratum+ssl://qtc.kryptex.network:8049` (Quantus) |
 | Pass | `x` |
 | Extra config arguments | 任意。例: `--devices 0,2` や `--thermal off` |
 
-フライトシートをリグに適用します。各 GPU は別々のワーカーとして採掘し（プール上では `<worker>_gpuN`）、Hive には GPU ごとのハッシュレートが表示されます。オーバークロック設定は Hive の OC プロファイルに残り、LiteMiner が触れることはありません。ログ: `/var/log/miner/custom/liteminer.log`。コンソール: Hive のシェルで `miner`。使われるのは最初の Pool URL だけです。TLS のポートには `stratum+ssl://` と書いてください。
+フライトシートをリグに適用します。各 GPU は別々のワーカーとして採掘し（プール上では `<worker>_gpuN`）、Hive には GPU ごとのハッシュレートが表示されます。オーバークロック設定は Hive の OC プロファイルに残り、LiteMiner が触れることはありません。ログ: `/var/log/miner/custom/liteminer.log`。コンソール: Hive のシェルで `miner`。使われるのは最初の Pool URL だけです。`stratum+ssl://` も `stratum+tcp://` も付いていないアドレスでは TLS を自動で判別します。Extra config arguments は複数行で書けます。
 
 ### Docker と GPU レンタル（Vast.ai、Clore.ai、RunPod などの GPU クラウド）
 
@@ -149,36 +161,37 @@ Docker には、NVIDIA ドライバーと [NVIDIA Container Toolkit](https://doc
 
 ```bash
 docker run -d --name liteminer --gpus all --restart unless-stopped -v liteminer-data:/data \
-  liteminer/liteminer:0.5.0 -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
+  liteminer/liteminer:0.5.1 -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
 docker logs -f liteminer
 ```
 
 オプションの代わりに、コンテナは環境変数 `LITEMINER_ALGORITHM`、`LITEMINER_POOL`、`LITEMINER_WALLET`、`LITEMINER_WORKER`、`LITEMINER_PASSWORD`、`LITEMINER_DEVICES` も受け付けます。`/data` ボリュームは残しておいてください。ログと GPU ごとのチューニング結果が保存されるので、再起動してもチューニングをやり直さずに済みます。`docker stop -t 60 liteminer` を使うと、各 GPU が現在の作業を終えてから停止します。
 
-GPU クラウドでは、`liteminer/liteminer:0.5.0` イメージを選び、テンプレートの環境変数に `LITEMINER_ALGORITHM`、`LITEMINER_POOL`、`LITEMINER_WALLET` を設定します。または、CUDA 入りの任意の Ubuntu イメージ（例: `nvidia/cuda:12.4.1-base-ubuntu22.04`）を選び、次のスクリプトを起動スクリプト（on-start script）に指定します。
+GPU クラウドでは、`liteminer/liteminer:0.5.1` イメージを選び、テンプレートの環境変数に `LITEMINER_ALGORITHM`、`LITEMINER_POOL`、`LITEMINER_WALLET` を設定します。または、CUDA 入りの任意の Ubuntu イメージ（例: `nvidia/cuda:12.4.1-base-ubuntu22.04`）を選び、次のスクリプトを起動スクリプト（on-start script）に指定します。
 
 ```bash
 apt-get update && apt-get install -y --no-install-recommends ca-certificates curl
-curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz | tar -xz -C /opt
-cd /opt/LiteMiner-0.5.0-linux-x64 && nohup ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w cloud1 > /var/log/liteminer.log 2>&1 &
+curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-linux-x64-portable.tar.gz | tar -xz -C /opt
+cd /opt/LiteMiner-0.5.1-linux-x64 && nohup ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w cloud1 > /var/log/liteminer.log 2>&1 &
 ```
 
 インスタンスのすべての GPU が採掘します。ログは `tail -f /var/log/liteminer.log` で確認できます。レンタルサーバーは高温で動く設計のことがよくあります。温度をプロバイダーが管理している場合は、`--thermal off` で温度管理をプロバイダーに任せられます。
 
 ## ダウンロードとチェックサム
 
-リリース 0.5.0 のすべてのファイルは[リリースページ](https://github.com/liteminergpu/liteminer/releases/latest)にあります。ダウンロードしたファイルを `SHA256SUMS.txt` と照合するには、Windows では `certutil -hashfile ファイル SHA256`、Linux では `sha256sum -c --ignore-missing SHA256SUMS.txt` を実行します。
+リリース 0.5.1 のすべてのファイルは[リリースページ](https://github.com/liteminergpu/liteminer/releases/latest)にあります。ダウンロードしたファイルを `SHA256SUMS.txt` と照合するには、Windows では `certutil -hashfile ファイル SHA256`、Linux では `sha256sum -c --ignore-missing SHA256SUMS.txt` を実行します。
 
 | プラットフォーム | ファイル | サイズ | SHA-256 | スキャン |
 |---|---|---:|---|---|
-| Windows x64 | [`LiteMiner-0.5.0-windows-x64-portable.zip`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-windows-x64-portable.zip) | 86.4 MB | <sub>`5cecc0f5b6d505474d1881a279007852ee61bf670a7b5deefe0d298844d74180`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/5cecc0f5b6d505474d1881a279007852ee61bf670a7b5deefe0d298844d74180) |
-| Linux x64 | [`LiteMiner-0.5.0-linux-x64-portable.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz) | 109.3 MB | <sub>`7012cf25d79081b5ae33163734b801453495fa2859ba716dad045621b906f297`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/7012cf25d79081b5ae33163734b801453495fa2859ba716dad045621b906f297) |
-| HiveOS | [`liteminer-0.5.0.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0.tar.gz) | 31.7 MB | <sub>`6c481944cac595bc3ae9ea9c75fb4d5fc53356ba899c3cc0f29925e71f2a38e1`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/6c481944cac595bc3ae9ea9c75fb4d5fc53356ba899c3cc0f29925e71f2a38e1) |
-| Docker（ビルドコンテキスト） | [`LiteMiner-0.5.0-docker.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-docker.tar.gz) | 31.7 MB | <sub>`f9bb75ecc0e61766fed48b95fc1747d9f7f7b8b8da2665b8bc71a87f0b6a786f`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/f9bb75ecc0e61766fed48b95fc1747d9f7f7b8b8da2665b8bc71a87f0b6a786f) |
-| Debian / Ubuntu | [`liteminer_0.5.0_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer_0.5.0_amd64.deb) | 31.9 MB | <sub>`cbe27b0df79958b9157d1ce2f96ecd2232d8f26b87a65f896a06540d8c7ba4e2`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/cbe27b0df79958b9157d1ce2f96ecd2232d8f26b87a65f896a06540d8c7ba4e2) |
-| Debian / Ubuntu | [`liteminer-gui_0.5.0_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui_0.5.0_amd64.deb) | 45.8 MB | <sub>`a594191023ad6e0d82421c54c0531d40eb8ead8ff145b21e1c5464c71448f7f6`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/a594191023ad6e0d82421c54c0531d40eb8ead8ff145b21e1c5464c71448f7f6) |
-| Fedora / RHEL / openSUSE | [`liteminer-0.5.0-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0-1.x86_64.rpm) | 26.4 MB | <sub>`02303eedc01ce0827e2be8af725a99411a43d713b9078f95dce4ccd81cb48b87`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/02303eedc01ce0827e2be8af725a99411a43d713b9078f95dce4ccd81cb48b87) |
-| Fedora / RHEL / openSUSE | [`liteminer-gui-0.5.0-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui-0.5.0-1.x86_64.rpm) | 31.5 MB | <sub>`c91f566035fc4651c1592e78742e0dc1b41dfeb4839a842887113e061d1c9132`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/c91f566035fc4651c1592e78742e0dc1b41dfeb4839a842887113e061d1c9132) |
+| Windows x64 | [`LiteMiner-0.5.1-windows-x64-portable.zip`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-windows-x64-portable.zip) | 86.6 MB | <sub>`5c1f965892905f51f715a3e71ae90a9c078eecf9d14a827551a40176b129e831`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/5c1f965892905f51f715a3e71ae90a9c078eecf9d14a827551a40176b129e831) |
+| Linux x64 | [`LiteMiner-0.5.1-linux-x64-portable.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-linux-x64-portable.tar.gz) | 109.4 MB | <sub>`7ee9a792b0166fa240ee44084bcf64ed48013e54585ec83b5ab2d81373cf0fd1`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/7ee9a792b0166fa240ee44084bcf64ed48013e54585ec83b5ab2d81373cf0fd1) |
+| HiveOS | [`liteminer-0.5.1.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-0.5.1.tar.gz) | 31.8 MB | <sub>`2f928cc5f098e320e7b18e0c50b21ec689b617bade35ba5434ede96d31d59e2c`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/2f928cc5f098e320e7b18e0c50b21ec689b617bade35ba5434ede96d31d59e2c) |
+| Docker（ビルドコンテキスト） | [`LiteMiner-0.5.1-docker.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-docker.tar.gz) | 31.7 MB | <sub>`065abe902d455669072639a18e3096d3061976078c3bd622094bb491938f6df8`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/065abe902d455669072639a18e3096d3061976078c3bd622094bb491938f6df8) |
+| Debian / Ubuntu | [`liteminer_0.5.1_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer_0.5.1_amd64.deb) | 31.9 MB | <sub>`330824098d1f1e164c93a6cef10dca805456e895187c37967be1218b128f3ecc`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/330824098d1f1e164c93a6cef10dca805456e895187c37967be1218b128f3ecc) |
+| Debian / Ubuntu | [`liteminer-gui_0.5.1_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-gui_0.5.1_amd64.deb) | 45.8 MB | <sub>`b046e4b126349545efc6986cf7472d7aa780dc4b7d5d51d0504d502479b88282`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/b046e4b126349545efc6986cf7472d7aa780dc4b7d5d51d0504d502479b88282) |
+| Fedora / RHEL / openSUSE | [`liteminer-0.5.1-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-0.5.1-1.x86_64.rpm) | 26.9 MB | <sub>`69df9bb7d1d7cb38e14db95110a515d4107fdf69d394764aecc7ea9edf1f2a3d`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/69df9bb7d1d7cb38e14db95110a515d4107fdf69d394764aecc7ea9edf1f2a3d) |
+| Fedora / RHEL / openSUSE | [`liteminer-gui-0.5.1-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-gui-0.5.1-1.x86_64.rpm) | 31.5 MB | <sub>`2ed087d7d6f72b8d1cd4128bbc9c91f99b6b0bd3d82593ed54ae774c42bb221e`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/2ed087d7d6f72b8d1cd4128bbc9c91f99b6b0bd3d82593ed54ae774c42bb221e) |
+| Flatpak（全ディストリビューション） | [`LiteMiner-0.5.1.flatpak`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1.flatpak) | 58.8 MB | <sub>`593b042efa211a5ea171c571d97e8ffb5b051cf474c416f3836037026d4fab2c`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/593b042efa211a5ea171c571d97e8ffb5b051cf474c416f3836037026d4fab2c) |
 
 > [!IMPORTANT]
 > ウイルス対策ソフトは、ほとんどのマイナーを「望ましくない可能性のあるプログラム」や「コインマイナー」として検出します。これは特定の脅威ではなくカテゴリによる検出です。そのため、上の表では VirusTotal のレポートを公開しています。LiteMiner はこのページからのみダウンロードし、チェックサムを照合してください。Windows Defender がファイルを削除した場合は、LiteMiner のフォルダーを除外に追加してください。
@@ -247,7 +260,8 @@ LiteMiner は、その通貨の Stratum プロトコルに対応したプール�
 | `--no-load-pause` | 他のプログラムが GPU に高い負荷をかけても一時停止せず、最低レベルで採掘を続ける。`--idle-only` がなければ `--background` を有効にする |
 | `--mine-on-battery` | バッテリー駆動中も採掘を続ける（既定では電源に接続されるまで一時停止。バッテリー駆動ではハッシュレートが大きく下がるのが普通） |
 | `--allow-sleep` | 採掘中でもアイドルタイマーによるスリープを許可（既定では GPU の採掘中はスリープしない。画面の消灯は可能） |
-| `--api-port` `API_PORT` | ローカルの読み取り専用 JSON API のポート（既定: 4280） |
+| `--api-port` `API_PORT` | ローカルの読み取り専用 JSON API のポート（既定値は 4280、使用中なら自動選択） |
+| `--api-endpoint-file` `PATH` | ローカル API が使用するポートとセッション ID をこのファイルに書き込む |
 | `--api-bind` `API_BIND` | API の待ち受けアドレス: `127.0.0.1`（既定）、`::1`、`localhost` のみ |
 | `--no-api` | ローカル JSON API を無効にする（デスクトップアプリはこれを使用） |
 | `--thermal` `{auto,custom,off}` | 温度保護: `auto`（既定: どの GPU でもチップが 85 °C を超えると減速、90 °C で一時停止、80 °C を下回ると再開。メモリはドライバーがメモリ温度を報告する場合にその限界値に従う）、`custom`（`--thermal-soft/hard/resume`。指定すると自動で選択）、`off` |
@@ -260,7 +274,7 @@ LiteMiner は、その通貨の Stratum プロトコルに対応したプール�
 | `--thermal-memory-resume` `THERMAL_MEMORY_RESUME` | 採掘を再開するメモリー温度（°C、これを下回ると再開） |
 | `-v`, `--verbose` | 動作に関する追加の診断情報を表示 |
 | `--no-color` | コンソール出力を色なしにする |
-| `--log-file` `LOG_FILE` | ログファイル（既定: `logs\liteminer.log`。10 MB でローテーションし、3 つ保持） |
+| `--log-file` `LOG_FILE` | logs/liteminer.log - ログファイル（既定はユーザーのランタイムディレクトリ。10 MB で切り替え、3 ファイルを保持） |
 | `--no-log-file` | ログファイルを書き込まない |
 | `--log-format` `{text,json}` | コンソール出力: `text`（既定）または 1 行に 1 件の JSON レコード（スクリプト向け） |
 | `--no-update-check` | 新しいバージョンを確認しない（既定では 3〜4 時間ごとに公開リリースページを読み込む。送信されるのはプログラム名とバージョンだけ） |
@@ -284,9 +298,12 @@ LiteMiner -B -a pearl --benchmark-seconds 300           # 5 分間のベンチ�
 
 **コンソール。** 30 秒ごとに、GPU ごとの速度、温度、ファン、消費電力、効率、承認・リジェクトされたシェア、状態の表を表示します。その間はイベントごとに 1 行（新しいジョブ、シェア、再接続、温度保護）を表示します。`--log-format json` を指定すると、代わりに 1 行に 1 件の JSON レコードを出力するので、`jq` やログ収集ツールでそのまま扱えます。
 
-**ログファイル。** 設定ファイルと同じ場所の `logs/liteminer.log` です。10 MB でローテーションし、3 ファイルを保持します。`--log-file` で場所を変更し、`--no-log-file` で無効にできます。
+**ログファイル。** ユーザー別のランタイムディレクトリ内の `logs/liteminer.log` です。10 MB でローテーションし、3 ファイルを保持します。`--log-file` で場所を変更し、`--no-log-file` で無効にできます。
+同じフォルダーから複数起動すると、各インスタンスは別々の既定ログ（`liteminer.log`、`liteminer-2.log` など）を使います。
 
 **ローカル API。** `127.0.0.1:4280` で動く、読み取り専用の小さな JSON API です。デスクトップアプリが使っており、あなたのスクリプトやダッシュボードからも利用できます。
+
+CLI の既定ポートが使用中の場合は空いているポートを選び、実際の URL をログに記録します。ポートを固定するには `--api-port` を使います。
 
 | エンドポイント | 返す内容 |
 |---|---|
@@ -300,7 +317,7 @@ curl -s http://127.0.0.1:4280/api/v1/summary
 ```
 
 ```json
-{"api_version":1,"product":"LiteMiner","version":"0.5.0","algorithm":"quantus","uptime_seconds":180.4,
+{"api_version":1,"product":"LiteMiner","version":"0.5.1","algorithm":"quantus","uptime_seconds":180.4,
  "health":"ok","devices":1,"device_states":{"mining":1},"rate":518.6,"unit":"MH/s","rate_window_seconds":60,
  "shares":{"accepted":2,"rejected":0,"submitted":2,"lost_unacknowledged":0,"discarded_stale":0,"verification_rejected":0,"pending":0},
  "max_temperature_c":64,"power_w":196.0,"pools":["qtc.kryptex.network:8049"]}
@@ -312,7 +329,7 @@ API はループバックインターフェースでのみ待ち受け（`--api-
 
 ## GPU とハッシュレート
 
-LiteMiner 0.5.0 と最近のビルドによる、73 機種の GPU での実際の結果です。`?` はその組み合わせをまだ測定していないことを示し、動作しないという意味ではありません。
+LiteMiner 0.5.1 と最近のビルドによる、73 機種の GPU での実際の結果です。`?` はその組み合わせをまだ測定していないことを示し、動作しないという意味ではありません。
 
 すべての結果はカード本来の設定で測定しています。LiteMiner はクロック、電圧、電力制限、ファンを変更していません。お使いのツールでの低電圧化や電力制限の引き下げにも完全に対応しており、LiteMiner はカードが出せる速度に合わせて動作します。
 
@@ -419,7 +436,7 @@ LiteMiner 0.5.0 と最近のビルドによる、73 機種の GPU での実際�
 |---|---|---|
 | デスクトップアプリの設定 | `%LOCALAPPDATA%\LiteMiner\data` | `~/.local/share/liteminer` |
 | ターミナル版マイナーの設定 | 現在のフォルダーの `miner.json` と `quantus.json` | 同上。パッケージ版は `~/.local/share/liteminer` |
-| ログ | `logs\liteminer.log` | `logs/liteminer.log` |
+| ログ | `%LOCALAPPDATA%\LiteMiner\runtime\logs\liteminer.log` | `~/.cache/LiteMiner/runtime/logs/liteminer.log` |
 
 プログラムはポータブルです。各 EXE には必要なものがすべて含まれており、起動のたびに自身のファイルを検証します。新しいバージョンを別のフォルダーに展開しても設定は引き継がれ、古い展開済みバージョンは自動で削除されます。
 
@@ -434,7 +451,7 @@ LiteMiner 0.5.0 と最近のビルドによる、73 機種の GPU での実際�
 <details>
 <summary><b>ウイルス対策ソフトが LiteMiner を削除した</b></summary>
 
-多くのウイルス対策ソフトは、特定の脅威ではなくカテゴリによってマイナーを検出します。ファイルを `SHA256SUMS.txt` と「[ダウンロードとチェックサム](#ダウンロードとチェックサム)」の VirusTotal レポートで照合してから、LiteMiner のフォルダーを除外に追加してください。LiteMiner はプログラムファイルを EXE と同じフォルダーの `.liteminer-runtime-v2` に展開し、フォルダーが読み取り専用の場合は `%TEMP%` に展開します。それでも起動しない場合は、LiteMiner が試したフォルダーがエラーメッセージに表示されます。それらのフォルダーも除外に追加するか、AppLocker で許可してください。
+多くのウイルス対策ソフトは、特定の脅威ではなくカテゴリによってマイナーを検出します。ファイルを `SHA256SUMS.txt` と「[ダウンロードとチェックサム](#ダウンロードとチェックサム)」の VirusTotal レポートで照合してから、LiteMiner のフォルダーを除外に追加してください。LiteMiner はプログラムファイルを `.liteminer-runtime-v2` に展開します。展開先は `%TEMP%` 内、EXE と同じフォルダー、`%LOCALAPPDATA%` 内の順に試します。それでも起動しない場合は、LiteMiner が試したフォルダーがエラーメッセージに表示されます。それらのフォルダーも除外に追加するか、AppLocker で許可してください。
 </details>
 
 <details>
@@ -447,6 +464,12 @@ LiteMiner 0.5.0 と最近のビルドによる、73 機種の GPU での実際�
 <summary><b>最小構成の Linux やコンテナで TLS エラーが出る</b></summary>
 
 `ca-certificates` をインストールしてください。LiteMiner はシステムの証明書ストアでプールの証明書を検証し、検証できない接続では採掘しません。
+</details>
+
+<details>
+<summary><b>HiveOS でマイニングが始まらない</b></summary>
+
+`miner` でコンソールを開くか、`/var/log/miner/custom/liteminer.log` を確認します。フライトシートから作られた引数は `/hive/miners/custom/liteminer/liteminer.args` にあります。よくある原因: Pool URL が別のコインのプール (既知のプールなら LiteMiner はアドレスからコインを判断します)、プールがログインを拒否 (ウォレットまたは `krx...` ログインを確認。メールアドレスのログインには `%WAL%/%WORKER_NAME%` が必要)、リグのメモリ不足 (GPU 1 枚あたり Pearl で約 200 MB、Quantus で約 300 MB)、ダウンロード失敗後の壊れたコピー (`/hive/miners/custom/custom-get <Installation URL> -f`)、古い HiveOS イメージ (`hive-replace -s -y`)。プールの統計は起動から 15-20 分後に表示されます。ハッシュレートは先に Hive のダッシュボードと `miner` コンソールに表示されます。 「Its mining kernel failed the startup check」: オーバークロックのプロファイルを初期状態に戻してください (別のアルゴリズム向けに調整したものは、ここで計算を誤ることがよくあります)。遅いカードではシェアが見つかるまで 30 分以上かかることがあります (GTX 10 / P104-100 の Pearl)。ウォッチドッグの「シェアなし」再起動をそれより短くしないでください。 カードが熱くなると 85 C から速度を落とし、90 C で一時停止するため、ダッシュボードの値が下がるか 0 になります。Hive の autofan で冷やすか、Hive のファン制御と臨界温度がすでにリグを守っている場合は Extra config に `--thermal off` を追加してください。
 </details>
 
 <details>

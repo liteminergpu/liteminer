@@ -12,7 +12,7 @@
 <a href="#gpu-et-hashrate"><img alt="GPUs" src="https://img.shields.io/badge/GPU-NVIDIA%20%7C%20AMD-76b900?logo=nvidia&logoColor=white"></a>
 <a href="#monnaies-algorithmes-et-frais-de-développeur"><img alt="Coins" src="https://img.shields.io/badge/coins-PRL%20%7C%20QTC-e8a33d"></a>
 <a href="#monnaies-algorithmes-et-frais-de-développeur"><img alt="Dev fee" src="https://img.shields.io/badge/dev%20fee-2%25-555555"></a>
-<a href="https://www.virustotal.com/gui/file/5cecc0f5b6d505474d1881a279007852ee61bf670a7b5deefe0d298844d74180"><img alt="VirusTotal" src="https://img.shields.io/badge/VirusTotal-report-394eff?logo=virustotal&logoColor=white"></a>
+<a href="https://www.virustotal.com/gui/file/5c1f965892905f51f715a3e71ae90a9c078eecf9d14a827551a40176b129e831"><img alt="VirusTotal" src="https://img.shields.io/badge/VirusTotal-report-394eff?logo=virustotal&logoColor=white"></a>
 <a href="#assistance"><img alt="Support" src="https://img.shields.io/badge/support-lmsupp%40proton.me-6d4aff?logo=protonmail&logoColor=white"></a>
 <a href="https://t.me/liteminergpu"><img alt="Telegram" src="https://img.shields.io/badge/Telegram-%40liteminergpu-26A5E4?logo=telegram&logoColor=white"></a>
 <a href="https://discord.com/users/1572214196995624980"><img alt="Discord" src="https://img.shields.io/badge/Discord-liteminer.support-5865F2?logo=discord&logoColor=white"></a>
@@ -70,7 +70,7 @@ Et quelques points dont vous n'aurez jamais à vous soucier :
 
 ### Windows
 
-1. [Téléchargez la dernière version](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-windows-x64-portable.zip) (`LiteMiner-0.5.0-windows-x64-portable.zip`).
+1. [Téléchargez la dernière version](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-windows-x64-portable.zip) (`LiteMiner-0.5.1-windows-x64-portable.zip`).
 2. Décompressez l'archive dans n'importe quel dossier.
 3. Lancez **`LiteMiner-GUI.exe`**. L'assistant de configuration vous guidera pour la suite.
 
@@ -84,7 +84,7 @@ LiteMiner.exe -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLE
 Ou téléchargez, décompressez et lancez-le avec une seule commande PowerShell :
 
 ```powershell
-irm https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-windows-x64-portable.zip -OutFile LiteMiner.zip; Expand-Archive LiteMiner.zip .; .\LiteMiner-0.5.0-windows-x64\LiteMiner-GUI.exe
+irm https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-windows-x64-portable.zip -OutFile LiteMiner.zip; Expand-Archive LiteMiner.zip .; .\LiteMiner-0.5.1-windows-x64\LiteMiner-GUI.exe
 ```
 
 Configuration requise : Windows 10 ou 11 (x64) et un pilote graphique à jour. L'application de bureau nécessite Windows 10 version 1809 ou ultérieure ; le mineur en terminal (`LiteMiner.exe` et les fichiers `.bat`) fonctionne sur tout Windows 10 x64.
@@ -99,13 +99,13 @@ Le plus rapide : une seule commande télécharge, décompresse et lance le minag
 Pearl:
 
 ```bash
-curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.5.0-linux-x64 && ./LiteMiner -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
+curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.5.1-linux-x64 && ./LiteMiner -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
 ```
 
 Quantus:
 
 ```bash
-curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.5.0-linux-x64 && ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w rig1
+curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-linux-x64-portable.tar.gz | tar -xz && cd LiteMiner-0.5.1-linux-x64 && ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w rig1
 ```
 
 Le même dossier contient l'application de bureau : `./LiteMiner-GUI`.
@@ -114,13 +114,21 @@ Paquets pour différentes distributions :
 
 ```bash
 # Debian, Ubuntu, Linux Mint, Pop!_OS
-wget https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer_0.5.0_amd64.deb https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui_0.5.0_amd64.deb
-sudo apt install ./liteminer_0.5.0_amd64.deb ./liteminer-gui_0.5.0_amd64.deb
+wget https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer_0.5.1_amd64.deb https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-gui_0.5.1_amd64.deb
+sudo apt install ./liteminer_0.5.1_amd64.deb ./liteminer-gui_0.5.1_amd64.deb
 ```
 
 ```bash
 # Fedora, RHEL, AlmaLinux, Rocky Linux (openSUSE: sudo zypper install ...)
-sudo dnf install https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0-1.x86_64.rpm https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui-0.5.0-1.x86_64.rpm
+sudo dnf install https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-0.5.1-1.x86_64.rpm https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-gui-0.5.1-1.x86_64.rpm
+```
+
+```bash
+# Flatpak
+wget https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1.flatpak
+flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+flatpak install --user ./LiteMiner-0.5.1.flatpak
+flatpak run org.liteminer.LiteMiner
 ```
 
 Le paquet `liteminer` contient le mineur en terminal pour les serveurs et les rigs ; `liteminer-gui` ajoute l'application de bureau. Pour exécuter le mineur en tant que service, utilisez `sudo systemctl enable --now liteminer@YOUR_USER` ; le service lit `~/.local/share/liteminer/miner.json`. Plus de détails : `man liteminer`.
@@ -129,19 +137,23 @@ Configuration requise : x86-64 ; glibc 2.28 ou plus récente pour le mineur en t
 
 ### HiveOS
 
+Pour une configuration rapide, importez la feuille PRL ou QTC du README.md de l’archive HiveOS et sélectionnez votre portefeuille.
+
+Dans HiveOS, Pearl est la monnaie **PRL** et Quantus **QUAN** : le symbole QTC y désigne une autre monnaie (QubitCoin).
+
 Créez une Flight Sheet : **Coin** : votre monnaie, **Wallet** : votre portefeuille, **Pool** : *Configure in miner*, **Miner** : *Custom*. Cliquez ensuite sur **Setup Miner Config** et remplissez :
 
 | Champ | Valeur |
 |---|---|
 | Miner name | `liteminer` (rempli à partir de l'URL) |
-| Installation URL | `https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0.tar.gz` |
-| Hash algorithm | `pearl` ou `quantus` |
-| Wallet and worker template | `%WAL%.%WORKER_NAME%` |
+| Installation URL | `https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-0.5.1.tar.gz` |
+| Hash algorithm | `pearlhash` ou `quantus` |
+| Wallet and worker template | `%WAL%.%WORKER_NAME%` ou `%WAL%/%WORKER_NAME%` |
 | Pool URL | `stratum+ssl://prl.kryptex.network:8048` (Pearl) ou `stratum+ssl://qtc.kryptex.network:8049` (Quantus) |
 | Pass | `x` |
 | Extra config arguments | facultatif, par exemple `--devices 0,2` ou `--thermal off` |
 
-Appliquez la Flight Sheet au rig. Chaque GPU mine comme un worker distinct (`<worker>_gpuN` sur le pool), Hive affiche le hashrate de chaque GPU, et l'overclocking reste dans votre profil OC Hive : LiteMiner n'y touche jamais. Journal : `/var/log/miner/custom/liteminer.log` ; console : `miner` dans le shell Hive. Seule la première Pool URL est utilisée ; pour les ports TLS, écrivez `stratum+ssl://`.
+Appliquez la Flight Sheet au rig. Chaque GPU mine comme un worker distinct (`<worker>_gpuN` sur le pool), Hive affiche le hashrate de chaque GPU, et l'overclocking reste dans votre profil OC Hive : LiteMiner n'y touche jamais. Journal : `/var/log/miner/custom/liteminer.log` ; console : `miner` dans le shell Hive. Seule la première Pool URL est utilisée ; pour une adresse sans `stratum+ssl://` ni `stratum+tcp://`, TLS est détecté automatiquement. Extra config arguments peut tenir sur plusieurs lignes.
 
 ### Docker et location de GPU (Vast.ai, Clore.ai, RunPod et autres clouds GPU)
 
@@ -149,36 +161,37 @@ Docker nécessite un hôte Linux (ou Windows avec Docker Desktop et WSL 2) équi
 
 ```bash
 docker run -d --name liteminer --gpus all --restart unless-stopped -v liteminer-data:/data \
-  liteminer/liteminer:0.5.0 -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
+  liteminer/liteminer:0.5.1 -a pearl -o stratum+ssl://prl.kryptex.network:8048 -u YOUR_WALLET -w rig1
 docker logs -f liteminer
 ```
 
 Au lieu des options, le conteneur accepte aussi les variables d'environnement `LITEMINER_ALGORITHM`, `LITEMINER_POOL`, `LITEMINER_WALLET`, `LITEMINER_WORKER`, `LITEMINER_PASSWORD` et `LITEMINER_DEVICES`. Conservez le volume `/data` : il contient les journaux et les résultats du réglage de chaque GPU, si bien qu'un redémarrage ne refait pas le réglage. `docker stop -t 60 liteminer` laisse chaque GPU terminer son travail en cours.
 
-Dans un cloud GPU, choisissez l'image `liteminer/liteminer:0.5.0` et définissez `LITEMINER_ALGORITHM`, `LITEMINER_POOL` et `LITEMINER_WALLET` dans les variables d'environnement du modèle. Ou prenez n'importe quelle image Ubuntu avec CUDA (par exemple `nvidia/cuda:12.4.1-base-ubuntu22.04`) et utilisez ceci comme script de démarrage (on-start script) :
+Dans un cloud GPU, choisissez l'image `liteminer/liteminer:0.5.1` et définissez `LITEMINER_ALGORITHM`, `LITEMINER_POOL` et `LITEMINER_WALLET` dans les variables d'environnement du modèle. Ou prenez n'importe quelle image Ubuntu avec CUDA (par exemple `nvidia/cuda:12.4.1-base-ubuntu22.04`) et utilisez ceci comme script de démarrage (on-start script) :
 
 ```bash
 apt-get update && apt-get install -y --no-install-recommends ca-certificates curl
-curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz | tar -xz -C /opt
-cd /opt/LiteMiner-0.5.0-linux-x64 && nohup ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w cloud1 > /var/log/liteminer.log 2>&1 &
+curl -fsSL https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-linux-x64-portable.tar.gz | tar -xz -C /opt
+cd /opt/LiteMiner-0.5.1-linux-x64 && nohup ./LiteMiner -a quantus -o stratum+ssl://qtc.kryptex.network:8049 -u YOUR_WALLET -w cloud1 > /var/log/liteminer.log 2>&1 &
 ```
 
 Tous les GPU de l'instance mineront. Suivez le journal avec `tail -f /var/log/liteminer.log`. Les serveurs loués tournent souvent chaud par conception : si le fournisseur gère les températures, `--thermal off` les lui laisse.
 
 ## Téléchargements et sommes de contrôle
 
-Tous les fichiers de la version 0.5.0 se trouvent sur la [page des versions](https://github.com/liteminergpu/liteminer/releases/latest). Pour vérifier un téléchargement avec `SHA256SUMS.txt`, exécutez `certutil -hashfile FICHIER SHA256` sous Windows ou `sha256sum -c --ignore-missing SHA256SUMS.txt` sous Linux.
+Tous les fichiers de la version 0.5.1 se trouvent sur la [page des versions](https://github.com/liteminergpu/liteminer/releases/latest). Pour vérifier un téléchargement avec `SHA256SUMS.txt`, exécutez `certutil -hashfile FICHIER SHA256` sous Windows ou `sha256sum -c --ignore-missing SHA256SUMS.txt` sous Linux.
 
 | Plateforme | Fichier | Taille | SHA-256 | Analyse |
 |---|---|---:|---|---|
-| Windows x64 | [`LiteMiner-0.5.0-windows-x64-portable.zip`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-windows-x64-portable.zip) | 86.4 Mo | <sub>`5cecc0f5b6d505474d1881a279007852ee61bf670a7b5deefe0d298844d74180`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/5cecc0f5b6d505474d1881a279007852ee61bf670a7b5deefe0d298844d74180) |
-| Linux x64 | [`LiteMiner-0.5.0-linux-x64-portable.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-linux-x64-portable.tar.gz) | 109.3 Mo | <sub>`7012cf25d79081b5ae33163734b801453495fa2859ba716dad045621b906f297`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/7012cf25d79081b5ae33163734b801453495fa2859ba716dad045621b906f297) |
-| HiveOS | [`liteminer-0.5.0.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0.tar.gz) | 31.7 Mo | <sub>`6c481944cac595bc3ae9ea9c75fb4d5fc53356ba899c3cc0f29925e71f2a38e1`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/6c481944cac595bc3ae9ea9c75fb4d5fc53356ba899c3cc0f29925e71f2a38e1) |
-| Docker (contexte de build) | [`LiteMiner-0.5.0-docker.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/LiteMiner-0.5.0-docker.tar.gz) | 31.7 Mo | <sub>`f9bb75ecc0e61766fed48b95fc1747d9f7f7b8b8da2665b8bc71a87f0b6a786f`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/f9bb75ecc0e61766fed48b95fc1747d9f7f7b8b8da2665b8bc71a87f0b6a786f) |
-| Debian / Ubuntu | [`liteminer_0.5.0_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer_0.5.0_amd64.deb) | 31.9 Mo | <sub>`cbe27b0df79958b9157d1ce2f96ecd2232d8f26b87a65f896a06540d8c7ba4e2`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/cbe27b0df79958b9157d1ce2f96ecd2232d8f26b87a65f896a06540d8c7ba4e2) |
-| Debian / Ubuntu | [`liteminer-gui_0.5.0_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui_0.5.0_amd64.deb) | 45.8 Mo | <sub>`a594191023ad6e0d82421c54c0531d40eb8ead8ff145b21e1c5464c71448f7f6`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/a594191023ad6e0d82421c54c0531d40eb8ead8ff145b21e1c5464c71448f7f6) |
-| Fedora / RHEL / openSUSE | [`liteminer-0.5.0-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-0.5.0-1.x86_64.rpm) | 26.4 Mo | <sub>`02303eedc01ce0827e2be8af725a99411a43d713b9078f95dce4ccd81cb48b87`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/02303eedc01ce0827e2be8af725a99411a43d713b9078f95dce4ccd81cb48b87) |
-| Fedora / RHEL / openSUSE | [`liteminer-gui-0.5.0-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.0/liteminer-gui-0.5.0-1.x86_64.rpm) | 31.5 Mo | <sub>`c91f566035fc4651c1592e78742e0dc1b41dfeb4839a842887113e061d1c9132`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/c91f566035fc4651c1592e78742e0dc1b41dfeb4839a842887113e061d1c9132) |
+| Windows x64 | [`LiteMiner-0.5.1-windows-x64-portable.zip`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-windows-x64-portable.zip) | 86.6 Mo | <sub>`5c1f965892905f51f715a3e71ae90a9c078eecf9d14a827551a40176b129e831`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/5c1f965892905f51f715a3e71ae90a9c078eecf9d14a827551a40176b129e831) |
+| Linux x64 | [`LiteMiner-0.5.1-linux-x64-portable.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-linux-x64-portable.tar.gz) | 109.4 Mo | <sub>`7ee9a792b0166fa240ee44084bcf64ed48013e54585ec83b5ab2d81373cf0fd1`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/7ee9a792b0166fa240ee44084bcf64ed48013e54585ec83b5ab2d81373cf0fd1) |
+| HiveOS | [`liteminer-0.5.1.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-0.5.1.tar.gz) | 31.8 Mo | <sub>`2f928cc5f098e320e7b18e0c50b21ec689b617bade35ba5434ede96d31d59e2c`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/2f928cc5f098e320e7b18e0c50b21ec689b617bade35ba5434ede96d31d59e2c) |
+| Docker (contexte de build) | [`LiteMiner-0.5.1-docker.tar.gz`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1-docker.tar.gz) | 31.7 Mo | <sub>`065abe902d455669072639a18e3096d3061976078c3bd622094bb491938f6df8`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/065abe902d455669072639a18e3096d3061976078c3bd622094bb491938f6df8) |
+| Debian / Ubuntu | [`liteminer_0.5.1_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer_0.5.1_amd64.deb) | 31.9 Mo | <sub>`330824098d1f1e164c93a6cef10dca805456e895187c37967be1218b128f3ecc`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/330824098d1f1e164c93a6cef10dca805456e895187c37967be1218b128f3ecc) |
+| Debian / Ubuntu | [`liteminer-gui_0.5.1_amd64.deb`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-gui_0.5.1_amd64.deb) | 45.8 Mo | <sub>`b046e4b126349545efc6986cf7472d7aa780dc4b7d5d51d0504d502479b88282`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/b046e4b126349545efc6986cf7472d7aa780dc4b7d5d51d0504d502479b88282) |
+| Fedora / RHEL / openSUSE | [`liteminer-0.5.1-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-0.5.1-1.x86_64.rpm) | 26.9 Mo | <sub>`69df9bb7d1d7cb38e14db95110a515d4107fdf69d394764aecc7ea9edf1f2a3d`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/69df9bb7d1d7cb38e14db95110a515d4107fdf69d394764aecc7ea9edf1f2a3d) |
+| Fedora / RHEL / openSUSE | [`liteminer-gui-0.5.1-1.x86_64.rpm`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/liteminer-gui-0.5.1-1.x86_64.rpm) | 31.5 Mo | <sub>`2ed087d7d6f72b8d1cd4128bbc9c91f99b6b0bd3d82593ed54ae774c42bb221e`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/2ed087d7d6f72b8d1cd4128bbc9c91f99b6b0bd3d82593ed54ae774c42bb221e) |
+| Flatpak (toute distribution) | [`LiteMiner-0.5.1.flatpak`](https://github.com/liteminergpu/liteminer/releases/download/v0.5.1/LiteMiner-0.5.1.flatpak) | 58.8 Mo | <sub>`593b042efa211a5ea171c571d97e8ffb5b051cf474c416f3836037026d4fab2c`</sub> | [VirusTotal](https://www.virustotal.com/gui/file/593b042efa211a5ea171c571d97e8ffb5b051cf474c416f3836037026d4fab2c) |
 
 > [!IMPORTANT]
 > Les antivirus signalent presque tous les mineurs comme « programme potentiellement indésirable » ou « mineur de cryptomonnaie ». C'est une catégorie, pas une menace précise, et c'est pourquoi les rapports VirusTotal sont ouvertement liés ci-dessus. Téléchargez LiteMiner uniquement depuis cette page et vérifiez la somme de contrôle. Si Windows Defender supprime le fichier, ajoutez le dossier de LiteMiner à ses exclusions.
@@ -247,7 +260,8 @@ Le mineur en terminal offre la même chose dans son fichier de configuration (`L
 | `--no-load-pause` | ne pas se mettre en pause quand d’autres programmes chargent fortement le GPU, mais continuer au niveau le plus bas ; active `--background` si `--idle-only` n’est pas indiqué |
 | `--mine-on-battery` | continuer à miner sur batterie (par défaut : pause jusqu’au retour sur secteur ; sur batterie, le hashrate est généralement bien plus faible) |
 | `--allow-sleep` | laisser l’ordinateur se mettre en veille selon son minuteur d’inactivité pendant le minage (par défaut, il reste éveillé tant qu’un GPU mine ; l’écran peut quand même s’éteindre) |
-| `--api-port` `API_PORT` | port de l’API JSON locale en lecture seule (par défaut : 4280) |
+| `--api-port` `API_PORT` | port de l’API JSON locale en lecture seule (4280 par défaut, sélection automatique si occupé) |
+| `--api-endpoint-file` `PATH` | écrire le port utilisé par l’API locale et l’identifiant de session dans ce fichier |
 | `--api-bind` `API_BIND` | adresse d’écoute de l’API : uniquement `127.0.0.1` (par défaut), `::1` ou `localhost` |
 | `--no-api` | désactiver l’API JSON locale (l’application de bureau en a besoin) |
 | `--thermal` `{auto,custom,off}` | protection thermique : `auto` (par défaut : le chip ralentit au-dessus de 85 °C, se met en pause à 90 °C et reprend sous 80 °C sur toute carte ; la mémoire suit la limite du pilote quand il fournit sa température), `custom` (`--thermal-soft/hard/resume` ; choisi automatiquement s’ils sont indiqués) ou `off` |
@@ -260,7 +274,7 @@ Le mineur en terminal offre la même chose dans son fichier de configuration (`L
 | `--thermal-memory-resume` `THERMAL_MEMORY_RESUME` | température de la mémoire (°C) en dessous de laquelle le minage reprend |
 | `-v`, `--verbose` | afficher davantage d’informations de diagnostic |
 | `--no-color` | sortie console sans couleurs |
-| `--log-file` `LOG_FILE` | fichier journal (par défaut : `logs\liteminer.log` ; rotation à 10 Mo, 3 fichiers conservés) |
+| `--log-file` `LOG_FILE` | logs/liteminer.log - journal (par défaut dans le répertoire d’exécution de l’utilisateur ; rotation à 10 Mo, 3 fichiers conservés) |
 | `--no-log-file` | ne pas écrire de fichier journal |
 | `--log-format` `{text,json}` | sortie console : `text` (par défaut) ou un enregistrement JSON par ligne (pour les scripts) |
 | `--no-update-check` | ne pas rechercher de nouvelle version (par défaut, la page publique des versions est lue toutes les 3 à 4 heures ; seuls le nom et la version du programme sont envoyés) |
@@ -284,9 +298,12 @@ LiteMiner -B -a pearl --benchmark-seconds 300           # benchmark de 5 minutes
 
 **Console.** Toutes les 30 secondes, le mineur affiche un tableau avec la vitesse, la température, le ventilateur, la puissance, l'efficacité, les shares acceptés et rejetés et l'état de chaque GPU ; entre deux tableaux, une ligne par événement (nouveau travail, share, reconnexion, protection thermique). Avec `--log-format json`, la console affiche à la place un enregistrement JSON par ligne, prêt pour `jq` ou un collecteur de journaux.
 
-**Fichier journal.** `logs/liteminer.log`, à côté de la configuration. Il tourne à 10 Mo, et trois fichiers sont conservés. `--log-file` le déplace, `--no-log-file` le désactive.
+**Fichier journal.** `logs/liteminer.log`, dans le répertoire de données d’exécution de l’utilisateur. Il tourne à 10 Mo, et trois fichiers sont conservés. `--log-file` le déplace, `--no-log-file` le désactive.
+En cas de lancements parallèles depuis le même dossier, chaque instance utilise son propre journal par défaut (`liteminer.log`, `liteminer-2.log`, etc.).
 
 **API locale.** Une petite API JSON en lecture seule sur `127.0.0.1:4280`. L'application de bureau l'utilise, et vos scripts et tableaux de bord le peuvent aussi :
+
+Si le port par défaut de la CLI est occupé, elle choisit un port libre et indique l’URL effective dans le journal. Utilisez `--api-port` pour fixer le port.
 
 | Point d'accès | Renvoie |
 |---|---|
@@ -300,7 +317,7 @@ curl -s http://127.0.0.1:4280/api/v1/summary
 ```
 
 ```json
-{"api_version":1,"product":"LiteMiner","version":"0.5.0","algorithm":"quantus","uptime_seconds":180.4,
+{"api_version":1,"product":"LiteMiner","version":"0.5.1","algorithm":"quantus","uptime_seconds":180.4,
  "health":"ok","devices":1,"device_states":{"mining":1},"rate":518.6,"unit":"MH/s","rate_window_seconds":60,
  "shares":{"accepted":2,"rejected":0,"submitted":2,"lost_unacknowledged":0,"discarded_stale":0,"verification_rejected":0,"pending":0},
  "max_temperature_c":64,"power_w":196.0,"pools":["qtc.kryptex.network:8049"]}
@@ -312,7 +329,7 @@ L'API n'écoute que sur l'interface de bouclage (`--api-bind` accepte `127.0.0.1
 
 ## GPU et hashrate
 
-Résultats réels de LiteMiner 0.5.0 et de ses builds récents sur 73 modèles de GPU. Un `?` signifie que nous n'avons pas encore mesuré cette combinaison, pas qu'elle ne fonctionne pas.
+Résultats réels de LiteMiner 0.5.1 et de ses builds récents sur 73 modèles de GPU. Un `?` signifie que nous n'avons pas encore mesuré cette combinaison, pas qu'elle ne fonctionne pas.
 
 Tous les résultats ont été mesurés avec les réglages d'origine des cartes : LiteMiner n'a modifié ni les fréquences, ni les tensions, ni les limites de puissance, ni les ventilateurs. Un undervolt ou une limite de puissance abaissée dans votre propre outil est entièrement pris en charge : LiteMiner s'adapte à la vitesse que fournit la carte.
 
@@ -419,7 +436,7 @@ Votre carte n'y figure pas, ou elle est plus lente qu'ici ? Lancez `LiteMiner -B
 |---|---|---|
 | Paramètres de l'application de bureau | `%LOCALAPPDATA%\LiteMiner\data` | `~/.local/share/liteminer` |
 | Configuration du mineur en terminal | `miner.json` et `quantus.json` dans le dossier courant | idem ; pour les paquets, `~/.local/share/liteminer` |
-| Journaux | `logs\liteminer.log` | `logs/liteminer.log` |
+| Journaux | `%LOCALAPPDATA%\LiteMiner\runtime\logs\liteminer.log` | `~/.cache/LiteMiner/runtime/logs/liteminer.log` |
 
 Le programme est portable : chaque EXE contient tout ce dont il a besoin et vérifie ses propres fichiers à chaque démarrage. Une nouvelle version décompressée dans un autre dossier conserve vos paramètres, et les anciennes versions décompressées sont supprimées automatiquement.
 
@@ -434,7 +451,7 @@ Installez le pilote le plus récent de [NVIDIA](https://www.nvidia.com/Download/
 <details>
 <summary><b>L'antivirus a supprimé LiteMiner</b></summary>
 
-La plupart des antivirus signalent les mineurs par catégorie, et non à cause d'une menace précise. Comparez le fichier avec `SHA256SUMS.txt` et le rapport VirusTotal de la section [Téléchargements et sommes de contrôle](#téléchargements-et-sommes-de-contrôle), puis ajoutez le dossier de LiteMiner aux exclusions. LiteMiner décompresse ses fichiers dans le dossier `.liteminer-runtime-v2` à côté de l'EXE ou, si son dossier est en lecture seule, dans `%TEMP%`. S'il ne démarre toujours pas, le message d'erreur indique les dossiers qu'il a essayés : ajoutez-les aussi aux exclusions ou autorisez-les dans AppLocker.
+La plupart des antivirus signalent les mineurs par catégorie, et non à cause d'une menace précise. Comparez le fichier avec `SHA256SUMS.txt` et le rapport VirusTotal de la section [Téléchargements et sommes de contrôle](#téléchargements-et-sommes-de-contrôle), puis ajoutez le dossier de LiteMiner aux exclusions. LiteMiner essaie de décompresser ses fichiers de programme dans `.liteminer-runtime-v2`, d’abord sous `%TEMP%`, puis à côté de l’EXE, puis sous `%LOCALAPPDATA%`. S'il ne démarre toujours pas, le message d'erreur indique les dossiers qu'il a essayés : ajoutez-les aussi aux exclusions ou autorisez-les dans AppLocker.
 </details>
 
 <details>
@@ -447,6 +464,12 @@ Une seule copie de LiteMiner peut utiliser un GPU à la fois. Fermez l'autre cop
 <summary><b>Erreurs TLS sur un Linux minimal ou dans un conteneur</b></summary>
 
 Installez `ca-certificates` : LiteMiner vérifie les certificats des pools avec le magasin du système et ne mine pas sur une connexion non vérifiée.
+</details>
+
+<details>
+<summary><b>Le minage ne démarre pas dans HiveOS</b></summary>
+
+Ouvrez la console avec `miner` ou lisez `/var/log/miner/custom/liteminer.log` ; les arguments créés à partir de la Flight Sheet sont dans `/hive/miners/custom/liteminer/liteminer.args`. Causes fréquentes : la Pool URL est celle d’une autre monnaie (LiteMiner prend la monnaie dans l’adresse d’un pool connu) ; le pool refuse l’identifiant (vérifiez le portefeuille ou l’identifiant `krx...` ; un identifiant e-mail demande `%WAL%/%WORKER_NAME%`) ; le rig manque de mémoire (chaque GPU a besoin d’environ 200 Mo pour Pearl et 300 Mo pour Quantus) ; une copie abîmée après un téléchargement raté (`/hive/miners/custom/custom-get <Installation URL> -f`) ; une ancienne image HiveOS (`hive-replace -s -y`). Le pool affiche ses statistiques 15-20 minutes après le démarrage ; le tableau de bord Hive et la console `miner` montrent le hashrate plus tôt. « Its mining kernel failed the startup check » : réinitialisez le profil d’overclocking (un profil réglé pour un autre algorithme calcule souvent faux ici). Une carte lente peut mettre 30 minutes ou plus à trouver un share (Pearl sur une GTX 10 / P104-100) : ne réglez pas le redémarrage du watchdog « pas de shares » plus court que cela. Une carte chaude ralentit dès 85 C et se met en pause à 90 C, le tableau de bord affiche alors moins ou 0 : laissez l'autofan de Hive la refroidir, ou ajoutez `--thermal off` dans Extra config si le contrôle des ventilateurs et la température critique de Hive protègent déjà le rig.
 </details>
 
 <details>
